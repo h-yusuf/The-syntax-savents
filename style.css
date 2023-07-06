@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500&display=swap');
 
+/* config */
 :root {
     --main-color: #5CB5A3;
     --primary-color: #DCC6A2;
@@ -12,7 +13,12 @@
 
 body {
     background-color: var(--bg-color);
-    font-family: var(--main-font);
+    font-family: var(--main-font) !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #212121 !important;
 }
 
 * {
@@ -42,10 +48,6 @@ body {
 .nav-lc {
     display: flex;
     justify-content: space-between;
-}
-
-.a {
-    color: #212121;
 }
 
 .li-nav {
@@ -119,30 +121,48 @@ body {
 } */
 
 /* Body */
-
-.bg-img{
-    background-image:url(asset/mokup.webp) ;
-    width: 1349px;
-    height: 636px;
-    backdrop-filter: var(--bg-color);
-}
 .bg-img-txt{
     justify-content: center;
     text-align: center;
     color: white;
     padding: 120px;
     padding-top: 150px;
-    margin-left: 250px;
     font-size: 48px;
     font-weight: bolder;
-    width: 811px;
+    position: relative;
+    width: 100%;
 }
+
 .bg-bg{
-    width: 1349px;
-    height: 636px;
-    margin-top: -636px;
-background: rgba(9, 47, 45, 0.71);
+    
 }
+
+.overlay {
+    background-image:url(asset/mokup.webp) !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 636px;
+    margin-top: 0;
+    background: rgba(9, 47, 45, 0.71);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
 .k2 {
     margin-top: 38px;
@@ -151,16 +171,12 @@ background: rgba(9, 47, 45, 0.71);
     /* font-weight: 600; */
 }
 
-.carousel-inner-lc {
-    margin: 50px;
-    margin-top: -150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .iklan {
-    height: 293px;
+    position: relative;
+    z-index: 99999;
+    top: -150px;
+    text-align: center;
+    display: flex;
 }
 
 /* kategori */
