@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --main-color: #5CB5A3;
+    --primary-color: #DCC6A2;
+    --abu-color: #3E4C54;
+    --bg-color: #E7F3EF;
+
+    --main-font: 'Inter', sans-serif;
+    --md-font: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.bg-color {
+    background-color: var(--main-color);
+}
+
+/* Navbar */
+.ul-nav {
+    display: flex;
+    height: 15px;
+    margin-top: 11px;
+    justify-content: right;
+    font-size: 14px;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 11px;
+}
+
+.nav-lc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a {
+    color: #212121;
+}
+
+.li-nav {
+    margin-left: 24px;
+}
+
+.nav-a {
+    padding: 32px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.maps {
+    margin-left: 37px;
+    display: flex;
+    font-size: 14px;
+}
+
+.maps>img {
+    height: 32px;
+    width: 32px;
+}
+
+.maps > p {
+    margin-left: 8px;
+    width: 216px;
+    color: white;
+}
+
+.search {
+    border: none;
+    outline: none;
+    padding-left: 18px;
+    outline: none;
+    width: 460px;
+}
+
+.search::-webkit-input-placeholder {
+    color: var(--main-color);
+}
+
+.src {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin-left: 48px;
+    width: 499px;
+    height: 35px;
+}
+
+.search_icon {
+    height: 1em;
+    padding-top: 5px;
+    fill: var(--main-color);
+}
+
+.icon-link {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.icon-nav {
+    margin-top: 6px;
+    margin-right: 32px;
+    height: 24px;
+}
+/* .icon-nav:hover{
+    background-color: pink;
+} */
+
+/* Body */
+
+.bg-img{
+    background-image:url(asset/mokup.webp) ;
+    width: 1349px;
+    height: 636px;
+    backdrop-filter: var(--bg-color);
+}
+.bg-img-txt{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 120px;
+    padding-top: 150px;
+    margin-left: 250px;
+    font-size: 48px;
+    font-weight: bolder;
+    width: 811px;
+}
+.bg-bg{
+    width: 1349px;
+    height: 636px;
+    margin-top: -636px;
+background: rgba(9, 47, 45, 0.71);
+}
+
+.k2 {
+    margin-top: 38px;
+    font-size: 24px;
+    margin-left: 32px;
+    /* font-weight: 600; */
+}
+
+.carousel-inner-lc {
+    margin: 50px;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iklan {
+    height: 293px;
+}
+
+/* kategori */
+
+.kategori {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    margin-left: 61px;
+    /* width: 1158px;
+    height: 207px; */
+}
+
+.kategori-a {
+    width: 357px;
+    height: 92px;
+    margin-top: 24px;
+    margin-left: 44px;
+    display: flex;
+    color: black;
+    border-radius: 16px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0 0 20px 5px #d0d0d0;
+}
+.kategori-a:hover{
+    box-shadow: 0 0 20px 8px #79b9b1;
+}
+
+.icon-kg {
+    height: 62px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-kg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+/* jasa popular */
+.jasa-popular {
+    margin-top: 42px;
+    margin-left: 32px;
+    width: 1285px;
+    height: 593px;
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.jp {
+    height: 510px;
+}
+
+.h2-card {
+    padding: 32px;
+    font-size: 24px;
+    margin-left: px;
+    font-weight: 500;
+}
+
+.f-card {
+    width: 1200px;
+    margin-left: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* Mengatur agar konten tidak meluncur ke baris baru secara otomatis */
+    overflow-x: auto;
+    /* Membuat konten gulir secara horizontal */
+    scrollbar-width: none;
+    /* Mengatur lebar scrollbar menjadi nol */
+    -ms-overflow-style: none;
+}
+
+.f-card::-webkit-scrollbar {
+    width: 0;
+    /* Mengatur lebar scrollbar menjadi nol */
+    height: 0;
+}
+
+.card {
+    margin-right: 32px;
+
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700); */
+
+/* * {
+  font-family: Open Sans;
+} */
+
+section {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer-distributed {
+    background: var(--main-color);
+    margin-top: 32px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: rgb(0, 0, 0);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+/* .footer-icons{
+    width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+} */
+/* .fa {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  } */
+.c1:hover {
+    background-color: #d62976;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    transition-duration: .3s;  
+      margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  /* twitter*/
+  .c2:hover {
+    background-color: #00acee;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    transition-duration: .3s;  
+      margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  /* linkdin*/
+  .c3:hover {
+    background-color: #0072b1;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    transition-duration: .3s;  
+      margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  /* Whatsapp*/
+  .c4:hover {
+    background-color: #128C7E;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    transition-duration: .3s;  
+      margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.3);
+    transition-duration: .3s;
+  }
+  .socialContainer:hover .fa{
+    animation: slide-in-top 0.3s both;
+  }
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-9px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
+
+.card-b {
+    height: 254px;
+    width: 190px;
+    margin: 24px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    box-shadow: 0 0 15px 8px #e7e7e7;
+    overflow: hidden;
+}
+
+.card-b:hover {
+    box-shadow: 0 0 20px 8px #9adfd0;
+}
+
+/*Image*/
+.card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    /* background: #0a3394; */
+    background-image: url(asset/bengkel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(to top, #0a3394, #4286f4); */
+}
+
+/*Description */
+.card-description {
+    display: flex;
+    position: absolute;
+    gap: .5em;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #212121;
+    height: 70%;
+    bottom: 0;
+    border-radius: 16px;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.text-body {
+    font-size: 1rem;
+    line-height: 130%;
+}
+
+
+/* Hover states */
+.card-b:hover .card-description {
+    transform: translateY(100%);
+}
