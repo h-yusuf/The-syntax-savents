@@ -336,11 +336,11 @@ section {
 }
 
 .footer-distributed .footer-company-name {
-    color: #222;
+    color: #ffffff;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
-}
+}   
 
 /* Footer Center */
 
@@ -443,26 +443,7 @@ section {
     margin-right: 3px;
     margin-bottom: 5px;
 }
-/* .footer-icons{
-    width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 25px;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-} */
-/* .fa {
-    width: 52px;
-    height: 52px;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
-  } */
+
 .c1:hover {
     background-color: #d62976;
     width: 35px;
@@ -524,6 +505,10 @@ section {
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  footer  a{
+    color: white !important;
   }
 
 /* If you don't want the footer to be responsive, remove these media queries */
