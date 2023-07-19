@@ -12,38 +12,62 @@
 
 <body>
   <!-- Navbar -->
-  <nav>
-    <div class="nav-lc">
-        <a class="ul-nav a" href="#">Download AdaJasa App</a>
-        <ul class="ul-nav">
-            <li class="li-nav">FaQ</li>
-            <li class="li-nav">Mulai Buka Jasa</li>
-            <li class="li-nav">promo</li>
-            <li class="li-nav">About Us</li>
+  <div class="nav-lc">
+    <a class="ul-nav a" href="#">Download AdaJasa App</a>
+    <ul class="ul-nav">
+      <li class="li-nav"><a href="">FaQ</a></li>
+      <li class="li-nav"><a href="">Mulai Buka Jasa</a></li>
+      <li class="li-nav"><a href=""> promo</a></li>
+      <li class="li-nav"><a href="">About Us</a></li>
+    </ul>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-color" style="flex-wrap: wrap;">
+    <div class="container-fluid pt-3 pb-2 ms-3 me-3" >
+      <div class="col-4" >
+        <a class="navbar-brand" href="#"><img class="mt-1" src="icon/Ada jasa.png"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " style="justify-content: end;"  id="navbarScroll">
+        <ul class="navbar-nav  my-3 my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link d-flex" href="#"><img class="me-3 icon-lc" src="icon/promo.png"><p style="display: none;">Promo</p></a>
+            <!-- <a class="nav-link" href="#">Link</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/notif.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/chat.png"></a>
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> -->
+          </li>
         </ul>
+        <form class="d-flex ">
+          <div class="InputContainer me-3" style="justify-content: space-between;" aria-label="search">
+            <input type="text" name="text" class="input" id="input" placeholder="Cari Jasa Di Sekitar Anda">
+            
+            <label for="input" class="labelforsearch">
+          <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+          </label>         
+          </div>
+          <!-- <div class="me-3 ms-2 mt-1 align-items-center" style="background-color: #738b81; height: 32px; width: 1.2px;"></div> -->
+          <!-- <input class="form-control  me-2 rounded-2" style="outline: none;" type="search" placeholder="Cari Di AdaJasa" aria-label="Search"> -->
+          <!-- <button class=" btn btn-outline-success" type="submit">Search</button> -->
+          <div class="ms-2 me-2" >
+            <img style="border-radius: 50% !important; width: 42px; height: 42px;" src="https://farih.co.id/wp-content/uploads/2023/05/ed_dihyxoaazcpr.jpg"  alt="">
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="nav-a bg-color">
-        <a href="#"><img class="img" src="icon/Ada jasa.png"></a>
-        <div class="maps">
-            <img src="icon/gmaps.png">
-            <p>Condongcatur,Depok,Sleman, Yogyakarta</p>
-        </div>
-        <div class="src">
-            <input type="search" class="search" placeholder="Cari Jasa">
-            <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
-                <path
-                    d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
-                </path>
-            </svg>
-        </div>
-        <div class="icon-link">
-            <a href="#"><img class="icon-nav" src="icon/promo.png"></a>
-            <a href="#"><img class="icon-nav" src="icon/notif.png"></a>
-            <a href="#"><img class="icon-nav" src="icon/chat.png"></a>
-        </div>
-        <img class="pp" src="icon/pp.png" alt="">
+    <div class="d-flex "  style="margin-left: 24px !important;">
+      <div class="d-flex ">
+        <img class="me-2" style="height: 16px; width: 16px;" src="icon/gmaps.png">
+        <p class="me-0  mb-0 ms-0  text" style="color: white; font-size: 12px; font-family:var( --md-font);">Condongcatur,Depok,Sleman,Yogyakarta</p>
+      </div>
     </div>
-</nav>
+  </nav>
+
   <!-- konten -->
   <div class="bg-bg">
     <div class="overlay">
