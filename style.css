@@ -27,6 +27,9 @@ body {
     margin-top: 158px !important;
 }
 
+.main-lc-color{
+    color: var(--main-color);
+}
 .bg-color {
     background-color: var(--main-color);
 }
@@ -118,13 +121,6 @@ a {
 .bg-img {
     /* background-image:url(asset/Group\ 834.png) !important; */
     max-height: 500px;
-}
-
-.bg-img{
-    background-image:url(asset/mokup.webp) ;
-    width: 1349px;
-    height: 636px;
-    backdrop-filter: var(--bg-color);
 }
 .bg-img-txt{
     justify-content: center;
@@ -271,9 +267,8 @@ a {
 }
 
 .h2-card {
-    padding: 32px;
+    padding: 0 0 28px 0;
     font-size: 24px;
-    margin-left: px;
     font-weight: 500;
 }
 
