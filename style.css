@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color) !important;
     font-family: var(--main-font) !important;
 }
 
@@ -27,6 +27,10 @@ a {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+
+.mt-150{
+    margin-top: 158px !important;
 }
 
 .bg-color {
@@ -52,6 +56,21 @@ a {
 
 .li-nav {
     margin-left: 24px;
+}
+
+#navbar.disapear {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s; /* Efek transisi durasi 0.3 detik */
+}
+
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999999;
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 .nav-a {
@@ -122,32 +141,31 @@ a {
 
 /* Body */
 .bg-img {
-    background-image:url(asset/Group\ 834.png) !important;
-    height: 500px;
+    /* background-image:url(asset/Group\ 834.png) !important; */
+    max-height: 500px;
 }
 
 .bg-img-txt{
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 120px;
-    padding-top: 150px;
     font-size: 48px;
     font-weight: bolder;
     position: relative;
+    top: -50px;
     width: 100%;
 }
 
-.overlay {
+/* .overlay {
     width: 100%;
     height: 636px;
     margin-top: 0;
     background: rgba(9, 47, 45, 0.71);
     position: relative;
     display: inline-block;
-  }
+  } */
   
-  .overlay::before {
+  /* .overlay::before {
     content: "";
     position: absolute;
     top: 0;
@@ -161,12 +179,40 @@ a {
     display: block;
     width: 100%;
     height: auto;
-  }
+  } */
+
+  .jumbotron {
+    position: relative;
+    width: 100%;
+    height: 636px;
+    background-image: url('asset/Group_834.png'); /* Ganti dengan URL gambar background Anda */
+    background-size: cover;
+    background-position: center;
+    /* color: #fff; */
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 47, 45, 0.5); /* Warna overlay */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .k2 {
     margin-top: 38px;
     font-size: 24px;
-    margin-left: 32px;
+    margin: 0 42px;
     /* font-weight: 600; */
 }
 
@@ -184,16 +230,20 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin-top: 32px;
-    margin-left: 61px;
+    justify-content: center;
+    /* margin-left: 61px; */
     /* width: 1158px;
     height: 207px; */
+}
+
+.kategori-col {
+    text-align: -webkit-center;
+    padding: 24px 50%;
 }
 
 .kategori-a {
     width: 357px;
     height: 92px;
-    margin-top: 24px;
-    margin-left: 44px;
     display: flex;
     color: black;
     border-radius: 16px;
