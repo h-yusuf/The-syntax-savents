@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500&display=swap');
 
+/* config */
 :root {
     --main-color: #5CB5A3;
     --primary-color: #DCC6A2;
@@ -12,7 +13,12 @@
 
 body {
     background-color: var(--bg-color);
-    font-family: var(--main-font);
+    font-family: var(--main-font) !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #212121 !important;
 }
 
 * {
@@ -42,10 +48,6 @@ body {
 .nav-lc {
     display: flex;
     justify-content: space-between;
-}
-
-.a {
-    color: #212121;
 }
 
 .li-nav {
@@ -119,30 +121,47 @@ body {
 } */
 
 /* Body */
-
-.bg-img{
-    background-image:url(asset/mokup.webp) ;
-    width: 1349px;
-    height: 636px;
-    backdrop-filter: var(--bg-color);
+.bg-img {
+    background-image:url(asset/Group\ 834.png) !important;
+    height: 500px;
 }
+
 .bg-img-txt{
     justify-content: center;
     text-align: center;
     color: white;
     padding: 120px;
     padding-top: 150px;
-    margin-left: 250px;
     font-size: 48px;
     font-weight: bolder;
-    width: 811px;
+    position: relative;
+    width: 100%;
 }
-.bg-bg{
-    width: 1349px;
+
+.overlay {
+    width: 100%;
     height: 636px;
-    margin-top: -636px;
-background: rgba(9, 47, 45, 0.71);
-}
+    margin-top: 0;
+    background: rgba(9, 47, 45, 0.71);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
 .k2 {
     margin-top: 38px;
@@ -151,16 +170,12 @@ background: rgba(9, 47, 45, 0.71);
     /* font-weight: 600; */
 }
 
-.carousel-inner-lc {
-    margin: 50px;
-    margin-top: -150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .iklan {
-    height: 293px;
+    position: relative;
+    z-index: 99999;
+    top: -150px;
+    text-align: center;
+    display: flex;
 }
 
 /* kategori */
@@ -321,11 +336,11 @@ section {
 }
 
 .footer-distributed .footer-company-name {
-    color: #222;
+    color: #ffffff;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
-}
+}   
 
 /* Footer Center */
 
@@ -428,26 +443,7 @@ section {
     margin-right: 3px;
     margin-bottom: 5px;
 }
-/* .footer-icons{
-    width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 25px;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-} */
-/* .fa {
-    width: 52px;
-    height: 52px;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
-  } */
+
 .c1:hover {
     background-color: #d62976;
     width: 35px;
@@ -509,6 +505,10 @@ section {
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  footer  a{
+    color: white !important;
   }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -592,4 +592,63 @@ section {
 /* Hover states */
 .card-b:hover .card-description {
     transform: translateY(100%);
+}
+
+/* navbar update */
+.InputContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+  
+  .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+  }
+  
+  .labelforsearch {
+    cursor: text;
+    padding: 0px 12px;
+  }
+  
+  .searchIcon {
+    width: 13px;
+  }
+  
+  .border {
+    height: 40%;
+    width: 1.3px;
+    background-color: var(--main-color);
+  }
+  .searchIcon path {
+    fill: rgb(114, 114, 114);
+  }
+.icon-lc:hover{
+    scale: 110%;
+}
+
+.ul-nav {
+    display: flex;
+    height: 15px;
+    margin-top: 4px;
+    font-size: 14px;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 10px;
+}
+@media (min-width: 992px ){
+    .navbar-expand-lg .navbar-nav-scroll {
+        overflow: visible;
+        align-items: center !important;
+    }
 }
