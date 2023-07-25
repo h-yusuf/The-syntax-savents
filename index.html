@@ -2,312 +2,622 @@
 <html>
 
 <head>
-    <title>Ada Jasa Web 2</title>
+    <title>Ada Jasa Web</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="website icon" style="border-radius: 50%;" href="icon/icon.png" type="png">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="nav-lc">
-        <a class="ul-nav a" href="#">Download AdaJasa App</a>
-        <ul class="ul-nav">
-            <li class="li-nav">FaQ</li>
-            <li class="li-nav">Mulai Buka Jasa</li>
-            <li class="li-nav">promo</li>
-            <li class="li-nav">About Us</li>
-        </ul>
+  <div id="navbar">
+    <!-- Navbar -->
+    <div class="nav-lc" style="background-color: #FFFFFF;">
+      <a class="ul-nav a" href="#">Download AdaJasa App</a>
+      <ul class="ul-nav">
+        <li class="li-nav"><a href="">FaQ</a></li>
+        <li class="li-nav"><a href="">Mulai Buka Jasa</a></li>
+        <li class="li-nav"><a href=""> promo</a></li>
+        <li class="li-nav"><a href="">About Us</a></li>
+      </ul>
     </div>
-    <div class="nav-a bg-color">
-        <a href="#"><img class="img" src="icon/Ada jasa.png"></a>
-        <div class="maps">
-            <img src="icon/gmaps.png">
-            <p>Condongcatur,Depok,Sleman, Yogyakarta</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-color" style="flex-wrap: wrap;">
+      <div class="container-fluid pt-3 pb-2 ms-3 me-3" >
+        <div class="col-lg-2" >
+          <a class="navbar-brand" href="#"><img class="mt-1" style="max-width: 200px;" src="icon/logo_new.png"></a>
         </div>
-        <div class="src">
-            <input type="search" class="search" placeholder="Cari Jasa">
-            <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
-                <path
-                    d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
-                </path>
-            </svg>
+        <div class="col-lg-10" style="padding-left: 3em;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " style="justify-content: space-between;"  id="navbarScroll">
+            <div class="row" style="width: 100%;">
+              <div class="col-9">
+                <div class="row">
+                  <div class="col-2" style="padding: 2px 0 0 0;">
+                    <button type="button" class="btn btn-outline-secondary"><span style="color: white;">Kategori Jasa</span></button>
+                    
+                  </div>
+                  <div class="col-10">
+                    <form class="d-flex" style="width: 100%;">
+                      <div class="InputContainer me-3" style="justify-content: space-between; height: 2.5em; width: 100%;" aria-label="search">
+                        <input type="text" name="text" class="input" id="input" placeholder="Cari Jasa Di Sekitar Anda">
+                        <label for="input" class="labelforsearch">
+                      <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                      </label>         
+                      </div>
+                      <!-- <div class="me-3 ms-2 mt-1 align-items-center" style="background-color: #738b81; height: 32px; width: 1.2px;"></div> -->
+                      <!-- <input class="form-control  me-2 rounded-2" style="outline: none;" type="search" placeholder="Cari Di AdaJasa" aria-label="Search"> -->
+                      <!-- <button class=" btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-3">
+                <ul class="navbar-nav  my-3 my-lg-0 navbar-nav-scroll"  style="justify-content: flex-end;">
+                  <li class="nav-item">
+                    <a class="nav-link d-flex" href="#"><img class="me-3 icon-lc" src="icon/promo.png"><p style="display: none;">Promo</p></a>
+                    <!-- <a class="nav-link" href="#">Link</a> -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/notif.png"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/chat.png"></a>
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> -->
+                  </li>
+                  <li>
+                    <div class="ms-2 me-2" >
+                      <img style="border-radius: 50% !important; width: 42px; height: 42px;" src="https://farih.co.id/wp-content/uploads/2023/05/ed_dihyxoaazcpr.jpg"  alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
         </div>
-        <div class="icon-link">
-            <a href="#"><img class="icon-nav" src="icon/promo.png"></a>
-            <a href="#"><img class="icon-nav" src="icon/notif.png"></a>
-            <a href="#"><img class="icon-nav" src="icon/chat.png"></a>
-        </div>
-        <img class="pp" src="icon/pp.png" alt="">
-    </div>
-</nav>
-  <!-- konten -->
-  <div class="bg-bg">
-    <div class="overlay">
-      <div class="bg-img">
-        <p class="bg-img-txt">Dapatkan Penyedia Jasa 
-        Terbaik untuk setiap 
-        kebutuhan Anda</p>
       </div>
+      <div class="d-flex "  style="margin-left: 24px !important;">
+        <div class="d-flex ">
+          <img class="me-2" style="height: 16px; width: 16px;" src="icon/gmaps.png">
+          <p class="me-0  mb-0 ms-0  text" style="color: white; font-size: 12px; font-family:var( --md-font);">Condongcatur,Depok,Sleman,Yogyakarta</p>
+        </div>
+      </div>
+    </nav>
+  </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" id="konten" style="padding: 0;">
+        <!-- konten -->
+        <div class="jumbotron">
+          <div class="overlay"></div> <!-- Overlay -->
+          <div class="content">
+            <p id="typed-text"class="bg-img-txt"></p>
+          </div>
+      </div>
+        <div class="container-fluid">
+          <div class="row iklan" justify-content-center>
+            <div class="col .col-md-6 .offset-md-3" style="display: flex; justify-content: center;">
+                  <img src="asset/banner.png"  alt="banner" style="position: relative; top: -150px; max-width: 100%;">
+            </div>
+          </div>
+          <div class="row" style="position: relative; top: -100px;">
+            <div class="col">
+              <div>
+                <h2 class="k2">Kategori Jasa</h2>
+                <div class="kategori">
+                  <div class="row row-cols-3">
+                    <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="#">
+                        <img class="icon-kg" src="icon/car.png">
+                        <p class="p-kg">Bengkel</p>
+                      </a></div>
+                        <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="#">
+                          <img class="icon-kg" src="icon/healt.png" alt="">
+                          <p class="p-kg">Kesehatan</p>
+                      </a></div>
+                        <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="#">
+                          <img class="icon-kg" src="icon/house.png" alt="">
+                          <p class="p-kg">Service Rumah</p>
+                      </a></div>
+                        <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="#">
+                          <img class="icon-kg" src="icon/fashion.png" alt="">
+                          <p class="p-kg">Style& Fashion</p>
+                      </a></div>
+                      <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="#">
+                        <img class="icon-kg" src="icon/clean.png" alt="">
+                        <p class="p-kg">Kebersihan</p>
+                    </a>
+                      </div>
+                      <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="#">
+                          <img class="icon-kg" src="icon/mdi_excavator.png" alt="">
+                          <p class="p-kg">Alat Berat</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="card" style="margin: 0 0 0 0; border-radius: 16px;">
+                      <div class="card-body" style="flex-wrap: wrap; padding: 56px 0;">
+                        <div class="container-fluid">
+                          <p class="h2-card">Jasa Popular</p>
+                          <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="row d-flex card-deck" >
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-3" >
+                                  <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                   <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                     <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                   </div>
+                                  <div class="card-body d-grid gap-2">
+                                   <div class="d-flex justify-content-between">
+                                     <p>
+                                        <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                        <span class="main-lc-color">Rp 171.000</span>
+                                     </p>
+                                     
+                                     <i class="d-flex" style="font-family: var(--md-font);">
+                                       <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                       <p class="mb-0"> 4.9</p></i>
+                                   </div>
+                                   <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row d-flex card-deck" >
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-3" >
+                                  <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                   <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                     <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                   </div>
+                                  <div class="card-body d-grid gap-2">
+                                   <div class="d-flex justify-content-between">
+                                     <p>
+                                        <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                        <span class="main-lc-color">Rp 171.000</span>
+                                     </p>
+                                     
+                                     <i class="d-flex" style="font-family: var(--md-font);">
+                                       <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                       <p class="mb-0"> 4.9</p></i>
+                                   </div>
+                                   <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" style="left: -1.5em; max-width: 70px;" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon btn btn-secondary" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" style="right: -1.5em; max-width: 70px;" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon btn btn-secondary" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" style="padding: 36px 0;">
+                    <div class="card" style="margin: 0 0 0 0; border-radius: 16px;">
+                      <div class="card-body" style="flex-wrap: wrap; padding: 56px 0;">
+                        <div class="container-fluid">
+                          <p class="h2-card">Jasa Rekomendasi</p>
+                          <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="row d-flex card-deck" >
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-3" >
+                                  <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                   <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                     <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                   </div>
+                                  <div class="card-body d-grid gap-2">
+                                   <div class="d-flex justify-content-between">
+                                     <p>
+                                        <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                        <span class="main-lc-color">Rp 171.000</span>
+                                     </p>
+                                     
+                                     <i class="d-flex" style="font-family: var(--md-font);">
+                                       <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                       <p class="mb-0"> 4.9</p></i>
+                                   </div>
+                                   <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row d-flex card-deck" >
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                  <div class="col-3" >
+                                     <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                      <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                        <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                      </div>
+                                     <div class="card-body d-grid gap-2">
+                                      <div class="d-flex justify-content-between">
+                                        <p>
+                                           <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                           <span class="main-lc-color">Rp 171.000</span>
+                                        </p>
+                                        
+                                        <i class="d-flex" style="font-family: var(--md-font);">
+                                          <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                          <p class="mb-0"> 4.9</p></i>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="col-3" >
+                                  <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+                                   <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+                                     <img src="asset/bengkel.png" class="card-img-top " alt="...">
+                                   </div>
+                                  <div class="card-body d-grid gap-2">
+                                   <div class="d-flex justify-content-between">
+                                     <p>
+                                        <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                                        <span class="main-lc-color">Rp 171.000</span>
+                                     </p>
+                                     
+                                     <i class="d-flex" style="font-family: var(--md-font);">
+                                       <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                                       <p class="mb-0"> 4.9</p></i>
+                                   </div>
+                                   <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" style="left: -1.5em; max-width: 70px;" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon btn btn-secondary" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" style="right: -1.5em; max-width: 70px;" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon btn btn-secondary" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer-distributed">
+              <div class="footer-left">
+        
+                <img src="icon/Ada jasa.png" alt="">
+        
+                <p class="footer-links">
+                  <a href="#" class="link-1">Home</a>
+                  
+                  <a href="#">Blog</a>
+                
+                  <a href="#">About</a>
+                  
+                  <a href="#">Faq</a>
+                  
+                  <a href="#">Contact</a>
+                </p>
+        
+                <p class="footer-company-name">AdaJasa@smilly.com</p>
+              </div>
+        
+              <div class="footer-center">
+        
+                <div>
+                  <i class="fa fa-map-marker"></i>
+                  <a href="https://goo.gl/maps/MLo5wJqJ4aoAuJaNA">
+                    <p><span>Condongcatur</span> Sleman, California</p>
+                  </a>
+                </div>
+        
+                <div>
+                  <i class="fa fa-phone"></i>
+                  <a href="">
+                    <p>+6285877681431</p>
+                  </a>
+                </div>
+        
+                <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="https://www.instagram.com/arinii.aa/">support@arinii.aa.com</a></p>
+                </div>
+        
+              </div>
+        
+              <div class="footer-right">
+        
+                <p class="footer-company-about">
+                  <span>About Us</span>
+      ada jasa untuk memudahkan dalam mencari berbagai macam jasa dengan tanpa ribet dan dengan biaya yang terjangkau			</p>
+        
+                <div class="footer-icons">
+        
+                  <a class="socialContainer" href="#"><i class="fa fa-facebook c1"></i></a>
+                  <a class="socialContainer" href="#"><i class="fa fa-twitter c2" ></i></a>
+                  <a class="socialContainer" href="#"><i class="fa fa-linkedin c3"></i></a>
+                  <a class="socialContainer" href="#"><i class="fa fa-github c4"></i></a>
+        
+                </div>
+        
+              </div>
+        
+        </footer>
     </div>
   </div>
-  <div class="container-fluid">
-    
-    <div class="row iklan" justify-content-center>
-      <div class="col .col-md-6 .offset-md-3">
-            <img src="asset/banner.png"  alt="banner">
-      </div>
-    </div>
-    <div class="row" style="position: relative; top: -100px;">
-      <div class="col">
-        <h2 class="k2">Kategori Jasa</h2>
-        <div class="kategori">
-            <a class="kategori-a" href="#">
-                <img class="icon-kg" src="icon/car.png">
-                <p class="p-kg">Bengkel</p>
-            </a>
-            <a class="kategori-a" href="#">
-                <img class="icon-kg" src="icon/healt.png" alt="">
-                <p class="p-kg">Kesehatan</p>
-            </a>
-            <a class="kategori-a" href="#">
-                <img class="icon-kg" src="icon/house.png" alt="">
-                <p class="p-kg">Service Rumah</p>
-            </a>
-            <a class="kategori-a" href="#">
-                <img class="icon-kg" src="icon/fashion.png" alt="">
-                <p class="p-kg">Style& Fashion</p>
-            </a>
-            <a class="kategori-a" href="#">
-                <img class="icon-kg" src="icon/clean.png" alt="">
-                <p class="p-kg">Kebersihan</p>
-            </a>
-            <a class="kategori-a" href="#">
-                <img class="icon-kg" src="icon/mdi_excavator.png" alt="">
-                <p class="p-kg">Alat Berat</p>
-            </a>
-        </div>
-        <div class="jasa-popular">
-            <p class="h2-card">Jasa Popular</p>
-            <div class="f-card">
-                <div class="card">
-                    <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
-                          <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
-                          <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
-                          <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
-                          <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                          <a href="#" style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                            <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
-                          </a>
-                        </div>
-                      </div>
-                </div>
-                <div class="card">
-                    <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
-                          <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
-                          <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
-                          <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
-                          <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                          <div style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                            <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="card">
-                    <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
-                          <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
-                          <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
-                          <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
-                          <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                          <div style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                            <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="card">
-                    <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
-                          <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
-                          <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
-                          <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
-                          <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                          <div style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                            <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="card">
-                    <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
-                          <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
-                          <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
-                          <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
-                          <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                          <div style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                            <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-        <div class="jasa-popular jp">
-            <p class="h2-card">Jasa Rekomendasi</p>
-            <div class="f-card">
-                <div class="card">
-                    <div class="card-b">
-                        <div class="card-image"></div>
-                          <div class="card-description">
-                            <p class="text-title"> Bengkel</p>
-                            <p class="text-body">Bengkel motor serba bisa <span></span></p>
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                        </div>
-                </div>
-                <div class="card">
-                    <div class="card-b">
-                        <div class="card-image"></div>
-                          <div class="card-description">
-                            <p class="text-title"> Bengkel</p>
-                            <p class="text-body">Bengkel motor serba bisa <span></span></p>
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                        </div>
-                </div>
-                <div class="card">
-                    <div class="card-b">
-                        <div class="card-image"></div>
-                          <div class="card-description">
-                            <p class="text-title"> Bengkel</p>
-                            <p class="text-body">Bengkel motor serba bisa <span></span></p>
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                        </div>
-                </div>
-                <div class="card">
-                    <div class="card-b">
-                        <div class="card-image"></div>
-                          <div class="card-description">
-                            <p class="text-title"> Bengkel</p>
-                            <p class="text-body">Bengkel motor serba bisa <span></span></p>
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                        </div>
-                </div>
-                <div class="card">
-                    <div class="card-b">
-                        <div class="card-image"></div>
-                          <div class="card-description">
-                            <p class="text-title"> Bengkel</p>
-                            <p class="text-body">Bengkel motor serba bisa <span></span></p>
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                        </div>
-                </div>
-                <div class="card">
-                    <div class="card-b">
-                        <div class="card-image"></div>
-                          <div class="card-description">
-                            <p class="text-title"> Bengkel</p>
-                            <p class="text-body">Bengkel motor serba bisa <span></span></p>
-                            <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
-                            <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
-                          </div>
-                        </div>
-                </div>
-          
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer -->
-  <footer class="footer-distributed">
-        <div class="footer-left">
-  
-          <h3>Ada<span>Jasa</span></h3>
-  
-          <p class="footer-links">
-            <a href="#" class="link-1">Home</a>
-            
-            <a href="#">Blog</a>
-          
-            <a href="#">About</a>
-            
-            <a href="#">Faq</a>
-            
-            <a href="#">Contact</a>
-          </p>
-  
-          <p class="footer-company-name">AdaJasa@smilly.com</p>
-        </div>
-  
-        <div class="footer-center">
-  
-          <div>
-            <i class="fa fa-map-marker"></i>
-            <p><span>Condongcatur</span> Sleman, California</p>
-          </div>
-  
-          <div>
-            <i class="fa fa-phone"></i>
-            <p>+6285877681431</p>
-          </div>
-  
-          <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:support@company.com">support@arini_aa.com</a></p>
-          </div>
-  
-        </div>
-  
-        <div class="footer-right">
-  
-          <p class="footer-company-about">
-            <span>About Us</span>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quas enim dicta.				</p>
-  
-          <div class="footer-icons">
-  
-            <a class="socialContainer" href="#"><i class="fa fa-facebook c1"></i></a>
-            <a class="socialContainer" href="#"><i class="fa fa-twitter c2" ></i></a>
-            <a class="socialContainer" href="#"><i class="fa fa-linkedin c3"></i></a>
-            <a class="socialContainer" href="#"><i class="fa fa-github c4"></i></a>
-  
-          </div>
-  
-        </div>
-  
-      </footer>
+</div>
+<script>
+    var typed = new Typed('#typed-text', {
+        strings: ["Dapatkan Penyedia Jasa Terbaik Untuk Setiap Kebutuhan Anda"],
+        typeSpeed: 50,
+        loop: false,
+    });
+  </script>
+
+      <script src="script.js"></script>
+      <!-- JS Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>

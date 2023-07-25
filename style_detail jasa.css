@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --main-color: #5CB5A3;
+    --primary-color: #DCC6A2;
+    --abu-color: #3E4C54;
+    --bg-color: #E7F3EF;
+
+    --main-font: 'Inter', sans-serif;
+    --md-font: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.bg-color {
+    background-color: var(--main-color);
+}
+
+/* Navbar */
+.ul-nav {
+    display: flex;
+    height: 15px;
+    margin-top: 11px;
+    justify-content: right;
+    font-size: 14px;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 11px;
+}
+
+.nav-lc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a {
+    color: #212121;
+}
+
+.li-nav {
+    margin-left: 24px;
+}
+
+.nav-a {
+    padding: 32px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.maps {
+    margin-left: 37px;
+    display: flex;
+    font-size: 14px;
+}
+
+.maps>img {
+    height: 32px;
+    width: 32px;
+}
+
+.maps > p {
+    margin-left: 8px;
+    width: 216px;
+    color: white;
+}
+
+.search {
+    border: none;
+    outline: none;
+    padding-left: 18px;
+    outline: none;
+    width: 460px;
+}
+
+.search::-webkit-input-placeholder {
+    color: var(--main-color);
+}
+
+.src {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin-left: 48px;
+    width: 499px;
+    height: 35px;
+}
+
+.search_icon {
+    height: 1em;
+    padding-top: 5px;
+    fill: var(--main-color);
+}
+
+.icon-link {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.icon-nav {
+    margin-top: 6px;
+    margin-right: 32px;
+    height: 24px;
+}
+
+/* link nav */
+.nav-link {
+    color: black;
+}
+
+/*Body*/
+h1 {
+    font-size: 24px;
+}
+.container {
+    /*margin digunakan untuk menata letak dari sisi luar*/
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top: 32px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.card {
+    display:flex;
+    width: fit-content;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}
