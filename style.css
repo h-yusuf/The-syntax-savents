@@ -22,6 +22,11 @@ body {
     list-style: none;
     box-sizing: border-box;
 }
+
+.mt-150{
+    margin-top: 158px !important;
+}
+
 .main-lc-color{
     color: var(--main-color);
 }
@@ -43,6 +48,21 @@ a {
 
 .li-nav {
     margin-left: 24px;
+}
+
+#navbar.disapear {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s; /* Efek transisi durasi 0.3 detik */
+}
+
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999999;
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 .nav-a {
@@ -98,35 +118,78 @@ a {
 } */
 
 /* Body */
-
-.bg-img{
-    background-image:url(asset/mokup.webp) ;
-    width: 1349px;
-    height: 636px;
-    backdrop-filter: var(--bg-color);
+.bg-img {
+    /* background-image:url(asset/Group\ 834.png) !important; */
+    max-height: 500px;
 }
 .bg-img-txt{
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 120px;
-    padding-top: 150px;
-    margin-left: 250px;
     font-size: 48px;
     font-weight: bolder;
-    width: 811px;
+    position: relative;
+    top: -50px;
+    width: 100%;
 }
-.bg-bg{
-    width: 1349px;
+
+/* .overlay {
+    width: 100%;
     height: 636px;
-    margin-top: -636px;
-background: rgba(9, 47, 45, 0.71);
+    margin-top: 0;
+    background: rgba(9, 47, 45, 0.71);
+    position: relative;
+    display: inline-block;
+  } */
+  
+  /* .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+  } */
+
+  .jumbotron {
+    position: relative;
+    width: 100%;
+    height: 636px;
+    background-image: url('asset/Group_834.png'); /* Ganti dengan URL gambar background Anda */
+    background-size: cover;
+    background-position: center;
+    /* color: #fff; */
+    text-align: center;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 47, 45, 0.5); /* Warna overlay */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .k2 {
     margin-top: 38px;
     font-size: 24px;
-    margin-left: 32px;
+    margin: 0 42px;
     /* font-weight: 600; */
 }
 
@@ -148,26 +211,30 @@ background: rgba(9, 47, 45, 0.71);
     display: flex;
     flex-wrap: wrap;
     margin-top: 32px;
-    margin-left: 61px;
+    justify-content: center;
+    /* margin-left: 61px; */
     /* width: 1158px;
     height: 207px; */
+}
+
+.kategori-col {
+    text-align: -webkit-center;
+    padding: 24px 50%;
 }
 
 .kategori-a {
     width: 357px;
     height: 92px;
-    margin-top: 24px;
-    margin-left: 44px;
     display: flex;
     color: black;
     border-radius: 16px;
     border: 1px solid #D9D9D9;
     background: #FFF;
     /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
-    box-shadow: 0 0 20px 5px #d0d0d0;
+    box-shadow: 0 0 8px 2.5px #d0d0d0;
 }
 .kategori-a:hover{
-    box-shadow: 0 0 20px 8px #79b9b1;
+    box-shadow: 0 0 16px 2.5px #79b9b1;
 }
 
 .icon-kg {
@@ -200,10 +267,19 @@ background: rgba(9, 47, 45, 0.71);
 }
 
 .h2-card {
-    padding: 32px;
+    padding: 0 0 8px 0;
     font-size: 24px;
-    margin-left: px;
     font-weight: 500;
+}
+
+.line {
+    transition: transform .2s;
+}
+
+.line:hover {
+    cursor: pointer;
+    /* box-shadow: 0 0 20px 8px #79b9b1; */
+    transform: scale(1.05)
 }
 
 .f-card {
@@ -228,6 +304,10 @@ background: rgba(9, 47, 45, 0.71);
 .card-lc {
     margin-right: 32px;
 
+}
+
+.card-deck {
+    padding: 20px;
 }
 
 /* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700); */
