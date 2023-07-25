@@ -691,7 +691,7 @@ h1,h2,h3,h4,h5,h6{
     overflow: hidden;
     cursor: pointer;
     padding-left: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.075);
   }
   
   .input {
@@ -754,4 +754,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 8px;
     background-color: var(--RN500,#F94D63);
     color: var(--NN0,#FFFFFF);
+}
+.off-txt{
+    color: #d0d0d0;
 }
