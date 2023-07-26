@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="website icon" style="border-radius: 50%;" href="icon/icon.png" type="png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="sidebar_style.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav>
+    <div class="nav-lc">
+        <a class="ul-nav a" href="#">Download AdaJasa App</a>
+        <ul class="ul-nav">
+            <li class="li-nav">FaQ</li>
+            <li class="li-nav">Mulai Buka Jasa</li>
+            <li class="li-nav">promo</li>
+            <li class="li-nav">About Us</li>
+        </ul>
+    </div>
+    <div class="nav-a bg-color">
+        <a href="#"><img class="img" src="icon/Ada jasa.png"></a>
+        <div class="maps">
+            <img src="icon/gmaps.png">
+            <p>Condongcatur,Depok,Sleman, Yogyakarta</p>
+        </div>
+        <div class="src">
+            <input type="search" class="search" placeholder="Cari Jasa">
+            <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
+                <path
+                    d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
+                </path>
+            </svg>
+        </div>
+        <div class="icon-link">
+            <a href="#"><img class="icon-nav" src="icon/promo.png"></a>
+            <a href="#"><img class="icon-nav" src="icon/notif.png"></a>
+            <a href="#"><img class="icon-nav" src="icon/chat.png"></a>
+        </div>
+        <img class="pp" src="icon/pp.png" alt="">
+    </div>
+</nav>
+    <!-- Konten-->
+    <div class="continer" style="display: flex;">
+        <div class="row-cols-auto">
+            <div class="col-lg-4">
+            <div class="container-filter" style="display: flex; margin-left: 0px; padding-left: 0px;">
+      
+                <div class="filter-container" style=" margin-left: 0px;" >
+                    
+                    <div class="filter-group">
+                        <div class="filter-label">Bengkel</div>
+                        <div class="list-container">
+                        <div class="form-check"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Mobil</label></div>
+                        <div class="form-check"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Motor</label></div>
+                        <div class="form-check"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Sepeda</label></div>
+                        </div>
+                    </div> 
+                    
+            
+            
+                    <div class="filter-group">
+                        <div class="filter-label">Kota</div> 
+                        <div class="dropdown">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 8px;">
+                              Sleman
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Bantul</a></li>
+                              <li><a class="dropdown-item" href="#">Kulon Progo</a></li>
+                              <li><a class="dropdown-item" href="#">Kota Madya</a></li>
+                              <li><a class="dropdown-item" href="#">Gunung Kidol</a></li>
+                            </ul>
+                          </div>          
+                    </div> <br>
+            
+                    <div class="filter-group">
+                        <div class="filter-label">Kecamatan</div> 
+                        <div class="dropdown">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 8px;">
+                              Depok
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Godean</a></li>
+                              <li><a class="dropdown-item" href="#">Mlati</a></li>
+                              <li><a class="dropdown-item" href="#">Gamping</a></li>
+                              <li><a class="dropdown-item" href="#">Ngaglik</a></li>
+                            </ul>
+                          </div>          
+                    </div> <br>
+            
+                    <div class="filter-group">
+                        <div class="filter-label">Kelurahan</div> 
+                        <div class="dropdown">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 6px;">
+                              Condongcatur
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Cturtunggal</a></li>
+                              <li><a class="dropdown-item" href="#">Maguwoharjo</a></li>
+                            </ul>
+                          </div>          
+                    </div> <br>
+            
+                    <div class="filter-group">
+                        <div class="filter-label">Kategori Lainya</div>
+                        <div class="list-container">
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Kesehatan</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Service Rumah</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Alat Berat</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Fashion</label></div>
+                        </div>
+                    </div> <br>
+            
+                    <div class="filter-group">
+                        <div class="filter-label">Rating</div>
+                        <div class="list-container">
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">*****</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">****</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">***</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">**</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">*</label></div>
+                        </div>
+                    </div> <br>
+            
+                    <div class="filter-group">
+                        <div class="filter-label">Harga</div>
+                        <div class="list-container">
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Harga Max</label></div>
+                        <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Harga Min</label></div>
+                        </div>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="f-card">
+                    <div class="card">
+                        <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+                              <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
+                              <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
+                              <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
+                              <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
+                                <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
+                                <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
+                              </div>
+                              <a href="#" style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                                <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="f-card">
+                    <div class="card">
+                        <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+                              <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
+                              <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
+                              <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
+                              <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
+                                <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
+                                <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
+                              </div>
+                              <a href="#" style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                                <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-4">
+                <div class="f-card">
+                    <div class="card">
+                        <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+                              <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
+                              <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
+                              <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
+                              <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
+                                <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
+                                <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
+                              </div>
+                              <a href="#" style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                                <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="f-card">
+                    <div class="card">
+                        <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+                              <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
+                              <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
+                              <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
+                              <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
+                                <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
+                                <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
+                              </div>
+                              <a href="#" style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                                <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="f-card">
+                    <div class="card">
+                        <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+                              <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
+                              <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
+                              <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
+                              <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
+                                <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
+                                <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
+                              </div>
+                              <a href="#" style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                                <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="f-card">
+                    <div class="card">
+                        <div style="width: 314px; height: 460px; padding: 10px; border-left: 0.50px #D9D9D9 solid; border-top: 0.50px #D9D9D9 solid; border-right: 0.50px #D9D9D9 solid; border-bottom: 0.50px #D9D9D9 solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+                              <div style="width: 113px; height: 28px; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Kesehatan</div>
+                              <div style="width: 259px; height: 33px; color: #034E53; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dokter Hewan Drh. Asnawi </div>
+                              <img style="width: 294px; height: 238px" src="asset/bengkel.png" />
+                              <div style="width: 278px; height: 33px; justify-content: flex-start; align-items: flex-end; gap: 8px; display: inline-flex">
+                                <div style="color: #697475; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: line-through; word-wrap: break-word">RS 56.000</div>
+                                <div style="color: #0AAEB9; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">RP 171.000</div>
+                              </div>
+                              <a href="#" style="width: 294px; height: 64px; background: #5CB5A3; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                                <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Pesan Jasa</div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

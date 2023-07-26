@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="website icon" style="border-radius: 50%;" href="icon/icon.png" type="png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="sidebar_style.css">
+    
+</head>
+<body>
+
+  <div id="navbar">
+    <!-- Navbar -->
+    <div class="nav-lc" style="background-color: #FFFFFF;">
+      <a class="ul-nav a" href="#">Download AdaJasa App</a>
+      <ul class="ul-nav">
+        <li class="li-nav"><a href="">FaQ</a></li>
+        <li class="li-nav"><a href="">Mulai Buka Jasa</a></li>
+        <li class="li-nav"><a href=""> promo</a></li>
+        <li class="li-nav"><a href="">About Us</a></li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-color" style="flex-wrap: wrap;">
+      <div class="container-fluid pt-3 pb-2 ms-3 me-3" >
+        <div class="col-lg-2" >
+          <a class="navbar-brand" href="#"><img class="mt-1" style="max-width: 200px;" src="icon/logo_new.png"></a>
+        </div>
+        <div class="col-lg-10" style="padding-left: 3em;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " style="justify-content: space-between;"  id="navbarScroll">
+            <div class="row" style="width: 100%;">
+              <div class="col-9">
+                <div class="row">
+                  <div class="col-2" style="padding: 2px 0 0 0;">
+                    <button type="button" class="btn btn-outline-secondary"><span style="color: white;">Kategori Jasa</span></button>
+                    
+                  </div>
+                  <div class="col-10">
+                    <form class="d-flex" style="width: 100%;">
+                      <div class="InputContainer me-3" style="justify-content: space-between; height: 2.5em; width: 100%;" aria-label="search">
+                        <input type="text" name="text" class="input" id="input" placeholder="Cari Jasa Di Sekitar Anda">
+                        <label for="input" class="labelforsearch">
+                      <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                      </label>         
+                      </div>
+                      <!-- <div class="me-3 ms-2 mt-1 align-items-center" style="background-color: #738b81; height: 32px; width: 1.2px;"></div> -->
+                      <!-- <input class="form-control  me-2 rounded-2" style="outline: none;" type="search" placeholder="Cari Di AdaJasa" aria-label="Search"> -->
+                      <!-- <button class=" btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-3">
+                <ul class="navbar-nav  my-3 my-lg-0 navbar-nav-scroll"  style="justify-content: flex-end;">
+                  <li class="nav-item">
+                    <a class="nav-link d-flex" href="#"><img class="me-3 icon-lc" src="icon/promo.png"><p style="display: none;">Promo</p></a>
+                    <!-- <a class="nav-link" href="#">Link</a> -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/notif.png"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/chat.png"></a>
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> -->
+                  </li>
+                  <li>
+                    <div class="ms-2 me-2" >
+                      <img style="border-radius: 50% !important; width: 42px; height: 42px;" src="https://farih.co.id/wp-content/uploads/2023/05/ed_dihyxoaazcpr.jpg"  alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="d-flex "  style="margin-left: 24px !important;">
+        <div class="d-flex ">
+          <img class="me-2" style="height: 16px; width: 16px;" src="icon/gmaps.png">
+          <p class="me-0  mb-0 ms-0  text" style="color: white; font-size: 12px; font-family:var( --md-font);">Condongcatur,Depok,Sleman,Yogyakarta</p>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- konten -->
+  <div class="row">
+    <div class="col col-lg-2"> 
+      <div class="container-fluid">
+        <div class="filterh"><h5 >Filter</h5></div>
+        <div class="container" style="display: flex; justify-content: right; padding-left: 0px;" class=" col col-lg-6">
+          
+          <div class="container-filter" style="display: flex; margin-left: 0px; padding-left: 0px;">
+          
+          <div class="filter-container" style=" margin-left: 0px;" >
+              
+              <div class="filter-group">
+                  <div class="filter-label">Bengkel</div>
+                  <div class="list-container">
+                  <div class="form-check"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Mobil</label></div>
+                  <div class="form-check"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Motor</label></div>
+                  <div class="form-check"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Sepeda</label></div>
+                  </div>
+              </div> 
+              
+      
+      
+              <div class="filter-group">
+                  <div class="filter-label">Kota</div> 
+                  <div class="dropdown">
+                      <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 8px;">
+                        Sleman
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Bantul</a></li>
+                        <li><a class="dropdown-item" href="#">Kulon Progo</a></li>
+                        <li><a class="dropdown-item" href="#">Kota Madya</a></li>
+                        <li><a class="dropdown-item" href="#">Gunung Kidol</a></li>
+                      </ul>
+                    </div>          
+              </div> <br>
+      
+              <div class="filter-group">
+                  <div class="filter-label">Kecamatan</div> 
+                  <div class="dropdown">
+                      <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 8px;">
+                        Depok
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Godean</a></li>
+                        <li><a class="dropdown-item" href="#">Mlati</a></li>
+                        <li><a class="dropdown-item" href="#">Gamping</a></li>
+                        <li><a class="dropdown-item" href="#">Ngaglik</a></li>
+                      </ul>
+                    </div>          
+              </div> <br>
+      
+              <div class="filter-group">
+                  <div class="filter-label">Kelurahan</div> 
+                  <div class="dropdown">
+                      <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 6px;">
+                        Condongcatur
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cturtunggal</a></li>
+                        <li><a class="dropdown-item" href="#">Maguwoharjo</a></li>
+                      </ul>
+                    </div>          
+              </div> <br>
+      
+              <div class="filter-group">
+                  <div class="filter-label">Kategori Lainya</div>
+                  <div class="list-container">
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Kesehatan</label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Service Rumah</label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Alat Berat</label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Fashion</label></div>
+                  </div>
+              </div> <br>
+      
+              <div class="filter-group">
+                  <div class="filter-label">Rating</div>
+                  <div class="list-container">
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox"><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg> <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox"><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox"><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox"><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox"><svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></label></div>
+                  </div>
+              </div> <br>
+      
+              <div class="filter-group">
+                  <div class="filter-label">Harga</div>
+                  <div class="list-container">
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Harga Max</label></div>
+                  <div class="list-item"><label class="filter-option"><input class="form-check-input" name="jenis" id="jenis1" value="jenis1" type="checkbox">Harga Min</label></div>
+                  </div>
+              </div>
+      
+          </div>
+    
+          
+          </div>
+          
+      
+    </div>
+    
+          
+      </div>
+    </div>
+    <div class="col col-lg-10" style="padding-left: 0px;"> 
+      <div class="row d-flex card-deck" style="padding-top: 60px; padding-left: 0px ;" >
+        <div class="col-3" >
+           <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+            <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+              <img src="asset/bengkel.png" class="card-img-top " alt="...">
+            </div>
+           <div class="card-body d-grid gap-2">
+            <div class="d-flex justify-content-between">
+              <p>
+                 <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                 <span class="main-lc-color">Rp 171.000</span>
+              </p>
+              
+              <i class="d-flex" style="font-family: var(--md-font);">
+                <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                <p class="mb-0"> 4.9</p></i>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           </div>
+         </div>
+       </div>
+        <div class="col-3" >
+           <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+            <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+              <img src="asset/bengkel.png" class="card-img-top " alt="...">
+            </div>
+           <div class="card-body d-grid gap-2">
+            <div class="d-flex justify-content-between">
+              <p>
+                 <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                 <span class="main-lc-color">Rp 171.000</span>
+              </p>
+              
+              <i class="d-flex" style="font-family: var(--md-font);">
+                <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                <p class="mb-0"> 4.9</p></i>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           </div>
+         </div>
+       </div>
+        <div class="col-3" >
+           <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+            <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+              <img src="asset/bengkel.png" class="card-img-top " alt="...">
+            </div>
+           <div class="card-body d-grid gap-2">
+            <div class="d-flex justify-content-between">
+              <p>
+                 <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+                 <span class="main-lc-color">Rp 171.000</span>
+              </p>
+              
+              <i class="d-flex" style="font-family: var(--md-font);">
+                <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                <p class="mb-0"> 4.9</p></i>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           </div>
+         </div>
+       </div>
+       <div class="col-3" >
+        <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+         <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+           <img src="asset/bengkel.png" class="card-img-top " alt="...">
+         </div>
+        <div class="card-body d-grid gap-2">
+         <div class="d-flex justify-content-between">
+           <p>
+              <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+              <span class="main-lc-color">Rp 171.000</span>
+           </p>
+           
+           <i class="d-flex" style="font-family: var(--md-font);">
+             <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+             <p class="mb-0"> 4.9</p></i>
+         </div>
+         <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row d-flex card-deck" style="padding-top: 0px; padding-left: 0px ;" >
+      <div class="col-3" >
+         <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+          <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+            <img src="asset/bengkel.png" class="card-img-top " alt="...">
+          </div>
+         <div class="card-body d-grid gap-2">
+          <div class="d-flex justify-content-between">
+            <p>
+               <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+               <span class="main-lc-color">Rp 171.000</span>
+            </p>
+            
+            <i class="d-flex" style="font-family: var(--md-font);">
+              <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <p class="mb-0"> 4.9</p></i>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+         </div>
+       </div>
+     </div>
+      <div class="col-3" >
+         <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+          <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+            <img src="asset/bengkel.png" class="card-img-top " alt="...">
+          </div>
+         <div class="card-body d-grid gap-2">
+          <div class="d-flex justify-content-between">
+            <p>
+               <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+               <span class="main-lc-color">Rp 171.000</span>
+            </p>
+            
+            <i class="d-flex" style="font-family: var(--md-font);">
+              <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <p class="mb-0"> 4.9</p></i>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+         </div>
+       </div>
+     </div>
+      <div class="col-3" >
+         <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+          <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+            <img src="asset/bengkel.png" class="card-img-top " alt="...">
+          </div>
+         <div class="card-body d-grid gap-2">
+          <div class="d-flex justify-content-between">
+            <p>
+               <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+               <span class="main-lc-color">Rp 171.000</span>
+            </p>
+            
+            <i class="d-flex" style="font-family: var(--md-font);">
+              <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+              <p class="mb-0"> 4.9</p></i>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+         </div>
+       </div>
+     </div>
+     <div class="col-3" >
+      <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+       <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+         <img src="asset/bengkel.png" class="card-img-top " alt="...">
+       </div>
+      <div class="card-body d-grid gap-2">
+       <div class="d-flex justify-content-between">
+         <p>
+            <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+            <span class="main-lc-color">Rp 171.000</span>
+         </p>
+         
+         <i class="d-flex" style="font-family: var(--md-font);">
+           <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+           <p class="mb-0"> 4.9</p></i>
+       </div>
+       <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row d-flex card-deck" style="padding-top: 0px; padding-left: 0px ;" >
+    <div class="col-3" >
+       <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+        <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+          <img src="asset/bengkel.png" class="card-img-top " alt="...">
+        </div>
+       <div class="card-body d-grid gap-2">
+        <div class="d-flex justify-content-between">
+          <p>
+             <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+             <span class="main-lc-color">Rp 171.000</span>
+          </p>
+          
+          <i class="d-flex" style="font-family: var(--md-font);">
+            <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+            <p class="mb-0"> 4.9</p></i>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+       </div>
+     </div>
+   </div>
+    <div class="col-3" >
+       <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+        <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+          <img src="asset/bengkel.png" class="card-img-top " alt="...">
+        </div>
+       <div class="card-body d-grid gap-2">
+        <div class="d-flex justify-content-between">
+          <p>
+             <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+             <span class="main-lc-color">Rp 171.000</span>
+          </p>
+          
+          <i class="d-flex" style="font-family: var(--md-font);">
+            <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+            <p class="mb-0"> 4.9</p></i>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+       </div>
+     </div>
+   </div>
+    <div class="col-3" >
+       <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+        <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+          <img src="asset/bengkel.png" class="card-img-top " alt="...">
+        </div>
+       <div class="card-body d-grid gap-2">
+        <div class="d-flex justify-content-between">
+          <p>
+             <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+             <span class="main-lc-color">Rp 171.000</span>
+          </p>
+          
+          <i class="d-flex" style="font-family: var(--md-font);">
+            <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+            <p class="mb-0"> 4.9</p></i>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+       </div>
+     </div>
+   </div>
+   <div class="col-3" >
+    <div class="card line" style="border: 1px solid var(--green, #5CB5A3);" >
+     <div class="card-header bg-white pt-3 "><p style="font-size: 20px; margin-bottom: 0; ">Bengkel</p><p style="font-size: 18px; color: var(--main-color); margin-bottom: 11px;">kang urut mbah manjur</p>
+       <img src="asset/bengkel.png" class="card-img-top " alt="...">
+     </div>
+    <div class="card-body d-grid gap-2">
+     <div class="d-flex justify-content-between">
+       <p>
+          <span class="" style="text-decoration: line-through;">Rp 56.000</span>
+          <span class="main-lc-color">Rp 171.000</span>
+       </p>
+       
+       <i class="d-flex" style="font-family: var(--md-font);">
+         <svg class="mt-1 me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#eeff00}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+         <p class="mb-0"> 4.9</p></i>
+     </div>
+     <button type="button" class="btn btn-primary btn-lg pt-3 pb-3" style="padding: 8px 8px; border-radius: 0;border: none; background-color: var(--main-color); ">Pesan Jasa</button>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    
+  </div>
+<!--Page-->
+  <div class="page" style="margin-right: 80px;">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination" style="justify-content: right;">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+  
+  
+
+
+
+    <!-- footer -->
+  <footer class="footer-distributed">
+    <div class="footer-left">
+
+      <h3>Ada<span>Jasa</span></h3>
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        
+        <a href="#">Blog</a>
+      
+        <a href="#">About</a>
+        
+        <a href="#">Faq</a>
+        
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">AdaJasa@smilly.com</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Condongcatur</span> Sleman, California</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+6285877681431</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">support@arini_aa.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About Us</span>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quas enim dicta.				</p>
+
+      <div class="footer-icons">
+
+        <a class="socialContainer" href="#"><i class="fa fa-facebook c1"></i></a>
+        <a class="socialContainer" href="#"><i class="fa fa-twitter c2" ></i></a>
+        <a class="socialContainer" href="#"><i class="fa fa-linkedin c3"></i></a>
+        <a class="socialContainer" href="#"><i class="fa fa-github c4"></i></a>
+
+      </div>
+    </div>
+    </div>
+
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <script>
+        const checkboxes = document.querySelectorAll('input[name="jenis"]');
+        checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', function() {
+            if (this.checked) {
+              checkboxes.forEach(otherCheckbox => {
+                if (otherCheckbox !== this) {
+                  otherCheckbox.checked = false;
+                }
+              });
+            }
+          });
+        }); </script>
+</body>
+</html>

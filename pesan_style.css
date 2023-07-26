@@ -1,0 +1,14 @@
+.spasi {
+    margin: 600px;
+  }
+.container {
+    background-color: white;
+    padding-top: 20px;
+}
+  .card {
+    border: 1px solid var(--main-color);
+    background-color: var(--bg-color);
+    margin-bottom: 10px;
+    
+
+  }
