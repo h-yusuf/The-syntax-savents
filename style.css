@@ -31,7 +31,7 @@ body {
     color: var(--main-color);
 }
 .bg-color {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 }
 
 /* Navbar */
@@ -756,7 +756,8 @@ h1,h2,h3,h4,h5,h6{
     color: var(--NN0,#FFFFFF);
 }
 .off-txt{
-    color: #d0d0d0;
+    /* color: #d0d0d0; */
+    color: #bebebe;
 }
 
 
