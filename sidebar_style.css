@@ -4,9 +4,10 @@
     padding: 10px;
     width: 180px;
     margin-left: 20px;
+    background-color: white;
 }
 .filterh {
-    margin-left: 100px;
+    margin-left: 20px;
     margin-top: 30px;
     margin-bottom: 8px;
 }
@@ -35,18 +36,27 @@
 .filter-option {
     display: block;
     margin-bottom: 5px;
+    
 }
 
 .filter-option input[type="checkbox"] {
     margin-right: 5px;
+    background-color: #5CB5A3;
 }
 
 .container-filter {
-    margin : 10px;
+    
     max-width: 400px;
 
 }
 .container {
     margin: 200;
+    
+}
+
+.dropdown-toggle {
+    border: 1px solid #5CB5A3;
+    background-color: white;
+    width: 150px;
     
 }
