@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500&display=swap');
 
-/* config */
 :root {
     --main-color: #5CB5A3;
     --primary-color: #DCC6A2;
@@ -16,11 +15,6 @@ body {
     font-family: var(--main-font) !important;
 }
 
-a {
-    text-decoration: none !important;
-    color: #212121 !important;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -29,57 +23,60 @@ a {
     box-sizing: border-box;
 }
 
+.mt-150{
+    margin-top: 158px !important;
+}
+
+.main-lc-color{
+    color: var(--main-color);
+}
 .bg-color {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 }
 
 /* Navbar */
-.ul-nav {
-    display: flex;
-    height: 15px;
-    margin-top: 11px;
-    justify-content: right;
-    font-size: 14px;
-    margin-right: 32px;
-    margin-left: 32px;
-    margin-bottom: 11px;
-}
 
 .nav-lc {
     display: flex;
     justify-content: space-between;
 }
 
+a {
+    color: #212121 !important;
+    text-decoration: none !important;
+}
+
 .li-nav {
     margin-left: 24px;
 }
 
+#navbar.disapear {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s; /* Efek transisi durasi 0.3 detik */
+}
+
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999999;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
 .nav-a {
     padding: 32px;
+    padding-left: 0 !important;
     padding-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left:32px !important;
+    margin-right:32px !important;
 }
 
-.maps {
-    margin-left: 37px;
-    display: flex;
-    font-size: 14px;
-}
-
-.maps>img {
-    height: 32px;
-    width: 32px;
-}
-
-.maps > p {
-    margin-left: 8px;
-    width: 216px;
-    color: white;
-}
-
-.search {
+.search-lc {
     border: none;
     outline: none;
     padding-left: 18px;
@@ -87,7 +84,7 @@ a {
     width: 460px;
 }
 
-.search::-webkit-input-placeholder {
+.search-lc::-webkit-input-placeholder {
     color: var(--main-color);
 }
 
@@ -122,32 +119,30 @@ a {
 
 /* Body */
 .bg-img {
-    background-image:url(asset/Group\ 834.png) !important;
-    height: 500px;
+    /* background-image:url(asset/Group\ 834.png) !important; */
+    max-height: 500px;
 }
-
 .bg-img-txt{
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 120px;
-    padding-top: 150px;
     font-size: 48px;
     font-weight: bolder;
     position: relative;
+    top: -50px;
     width: 100%;
 }
 
-.overlay {
+/* .overlay {
     width: 100%;
     height: 636px;
     margin-top: 0;
     background: rgba(9, 47, 45, 0.71);
     position: relative;
     display: inline-block;
-  }
+  } */
   
-  .overlay::before {
+  /* .overlay::before {
     content: "";
     position: absolute;
     top: 0;
@@ -161,21 +156,53 @@ a {
     display: block;
     width: 100%;
     height: auto;
-  }
+  } */
+
+  .jumbotron {
+    position: relative;
+    width: 100%;
+    height: 636px;
+    background-image: url('asset/Group_834.png'); /* Ganti dengan URL gambar background Anda */
+    background-size: cover;
+    background-position: center;
+    /* color: #fff; */
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 47, 45, 0.5); /* Warna overlay */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .k2 {
     margin-top: 38px;
     font-size: 24px;
-    margin-left: 32px;
+    margin: 0 42px;
     /* font-weight: 600; */
 }
 
-.iklan {
-    position: relative;
-    z-index: 99999;
-    top: -150px;
-    text-align: center;
+.carousel-inner-lc {
+    margin: 50px;
+    margin-top: -150px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iklan {
+    height: 293px;
 }
 
 /* kategori */
@@ -184,26 +211,30 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin-top: 32px;
-    margin-left: 61px;
+    justify-content: center;
+    /* margin-left: 61px; */
     /* width: 1158px;
     height: 207px; */
+}
+
+.kategori-col {
+    text-align: -webkit-center;
+    padding: 24px 50%;
 }
 
 .kategori-a {
     width: 357px;
     height: 92px;
-    margin-top: 24px;
-    margin-left: 44px;
     display: flex;
     color: black;
     border-radius: 16px;
     border: 1px solid #D9D9D9;
     background: #FFF;
     /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
-    box-shadow: 0 0 20px 5px #d0d0d0;
+    box-shadow: 0 0 8px 2.5px #d0d0d0;
 }
 .kategori-a:hover{
-    box-shadow: 0 0 20px 8px #79b9b1;
+    box-shadow: 0 0 16px 2.5px #79b9b1;
 }
 
 .icon-kg {
@@ -236,10 +267,19 @@ a {
 }
 
 .h2-card {
-    padding: 32px;
+    padding: 0 0 8px 0;
     font-size: 24px;
-    margin-left: px;
     font-weight: 500;
+}
+
+.line {
+    transition: transform .2s;
+}
+
+.line:hover {
+    cursor: pointer;
+    /* box-shadow: 0 0 20px 8px #79b9b1; */
+    transform: scale(1.05)
 }
 
 .f-card {
@@ -261,9 +301,13 @@ a {
     height: 0;
 }
 
-.card {
+.card-lc {
     margin-right: 32px;
 
+}
+
+.card-deck {
+    padding: 20px;
 }
 
 /* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700); */
@@ -336,11 +380,11 @@ section {
 }
 
 .footer-distributed .footer-company-name {
-    color: #ffffff;
+    color: #222;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
-}   
+}
 
 /* Footer Center */
 
@@ -443,7 +487,26 @@ section {
     margin-right: 3px;
     margin-bottom: 5px;
 }
-
+/* .footer-icons{
+    width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+} */
+/* .fa {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  } */
 .c1:hover {
     background-color: #d62976;
     width: 35px;
@@ -505,10 +568,6 @@ section {
       transform: translateY(0);
       opacity: 1;
     }
-  }
-
-  footer  a{
-    color: white !important;
   }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -594,7 +653,34 @@ section {
     transform: translateY(100%);
 }
 
+    /* KATEGORI */
+.kategori{
+    /* margin-top: 0; */
+    margin-left: 0;
+    margin-bottom: 16px;
+}
+.kategori-txt{
+    font-size: 18px;
+}
+.kategori-b{
+    margin:40px 40px 24px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.kategori-b .more{
+    font-style: italic;
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--md-font);
+}
+
+
+
 /* navbar update */
+
+
 .InputContainer {
     width: 100%;
     display: flex;
@@ -605,7 +691,7 @@ section {
     overflow: hidden;
     cursor: pointer;
     padding-left: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.075);
   }
   
   .input {
@@ -652,3 +738,73 @@ section {
         align-items: center !important;
     }
 }
+.card-header{
+    border: none !important;
+}
+.css-12w1vqc{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 16px;
+    min-width: 16px;
+    padding: 0px 3px;
+    border-radius: 8px;
+    background-color: var(--RN500,#F94D63);
+    color: var(--NN0,#FFFFFF);
+}
+.off-txt{
+    /* color: #d0d0d0; */
+    color: #bebebe;
+}
+
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999999;
+    top: 88px;
+    left: -150px;
+    width: 900%;
+}
+
+/* Menampilkan dropdown saat tombol dihover */
+.dropdown-container:hover #dropdown-content {
+    display: block;
+}
+
+.btn_masuk:hover .btn-secondary{
+    /* background-color: gray !important; */
+    color: var(--main-color) !important;
+}
+
+.btn_daftar:hover .btn-primary{
+    /* background-color: gray !important; */
+    background-color: var(--abu-color) !important;
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
