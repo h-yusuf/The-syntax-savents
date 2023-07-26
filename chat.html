@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ada Jasa Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="website icon" style="border-radius: 50%;" href="icon/icon.png" type="png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div >
+        <!-- Navbar -->
+        <div class="nav-lc" style="background-color: #FFFFFF;">
+            <a class="ul-nav a" href="#">Download AdaJasa App</a>
+            <ul class="ul-nav">
+                <li class="li-nav"><a href="">FaQ</a></li>
+                <li class="li-nav"><a href="">Mulai Buka Jasa</a></li>
+                <li class="li-nav"><a href=""> promo</a></li>
+                <li class="li-nav"><a href="">About Us</a></li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-color" style="flex-wrap: wrap;">
+            <div class="container-fluid pt-3 pb-2 ms-3 me-3">
+                <div class="col-lg-2">
+                    <a class="navbar-brand" href="#"><img class="mt-1" style="max-width: 200px;"
+                            src="icon/logo_new.png"></a>
+                </div>
+                <div class="col-lg-10" style="padding-left: 3em;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " style="justify-content: space-between;" id="navbarScroll">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-2" style="padding: 2px 0 0 0;">
+                                        <button type="button" class="btn btn-outline-secondary"><span
+                                                style="color: white;">Kategori Jasa</span></button>
+
+                                    </div>
+                                    <div class="col-10">
+                                        <form class="d-flex" style="width: 100%;">
+                                            <div class="InputContainer me-3"
+                                                style="justify-content: space-between; height: 2.5em; width: 100%;"
+                                                aria-label="search">
+                                                <input type="text" name="text" class="input" id="input"
+                                                    placeholder="Cari Jasa Di Sekitar Anda">
+                                                <label for="input" class="labelforsearch">
+                                                    <svg viewBox="0 0 512 512" class="searchIcon">
+                                                        <path
+                                                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                                                        </path>
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                            <!-- <div class="me-3 ms-2 mt-1 align-items-center" style="background-color: #738b81; height: 32px; width: 1.2px;"></div> -->
+                                            <!-- <input class="form-control  me-2 rounded-2" style="outline: none;" type="search" placeholder="Cari Di AdaJasa" aria-label="Search"> -->
+                                            <!-- <button class=" btn btn-outline-success" type="submit">Search</button> -->
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <ul class="navbar-nav  my-3 my-lg-0 navbar-nav-scroll"
+                                    style="justify-content: flex-end;">
+                                    <li class="nav-item">
+                                        <a class="nav-link d-flex" href="#"><img class="me-3 icon-lc"
+                                                src="icon/promo.png">
+                                            <p style="display: none;">Promo</p>
+                                        </a>
+                                        <!-- <a class="nav-link" href="#">Link</a> -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/notif.png"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/chat.png"></a>
+                                        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> -->
+                                    </li>
+                                    <li>
+                                        <div class="ms-2 me-2">
+                                            <img style="border-radius: 50% !important; width: 42px; height: 42px;"
+                                                src="https://farih.co.id/wp-content/uploads/2023/05/ed_dihyxoaazcpr.jpg"
+                                                alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex " style="margin-left: 24px !important;">
+                <div class="d-flex ">
+                    <img class="me-2" style="height: 16px; width: 16px;" src="icon/gmaps.png">
+                    <p class="me-0  mb-0 ms-0  text"
+                        style="color: white; font-size: 12px; font-family:var( --md-font);">
+                        Condongcatur,Depok,Sleman,Yogyakarta</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- konten -->
+    <div class="container-fluid mt-4">
+        <div class="row  ">
+            <div class="col-3 " style="height: 632px;">
+                <div class="card container-fluid "
+                    style="border-right:none; border-bottom:none;border: #5CB5A3; border-radius: 12px 0px 0px 0px ;background-color: #5CB5A3; ">
+                    <!-- <h2 class="kategori-txt pt-3 pb-2 " style="font-size: 22px; font-weight: bold;">Chat</h2> -->
+                    <div class=" d-flex  pt-4 pb-1 " style="flex-direction: row; justify-content: space-between;">
+                        <div class="d-flex ">
+                            <div class="align-items-center">
+                                <img src="icon/bengkel.png" style="border-radius: 50%;" alt="">
+                            </div>
+                            <div class="ms-3 mt-1 " style="text-align: start;">
+                                <h6 class="mb-0 link-light fs-6" style="font-weight: bolder;">Sanaciro Mahakuma </h6>
+                                <p class="link-light" style="font-size: 1rem;">avaliable
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <a href="">
+                                <svg class="unf-icon" viewBox="0 0 24 24" width="24" height="24"
+                                    fill="var(--color-icon-enabled, #2E3137)"
+                                    style="display: inline-block; vertical-align: middle;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.48 5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-1.5 8.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="InputContainer  pt-2 pb-2 mb-3">
+                            <input type="text" name="text" class="input" id="input" placeholder="Cari Pengguna">
+
+                            <label for="input pt-2 pb-2  " class="labelforsearch">
+                                <a href="">
+                                    <svg viewBox="0 0 512 512" class="searchIcon">
+                                        <path
+                                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                                        </path>
+                                    </svg>
+                            </label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card container-fluid d-flex pt-4" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical"
+                    style="border-top:none;border-right:none;height: 485px;border-radius: 0px 0px 0px 12px ">
+                    <button class="nav-link p-0 link-dark " style="background-color: white; border: none;"
+                        id="v-pills-massages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button"
+                        role="tab" aria-controls="v-pills-mas#v-pills-messages" aria-selected="true">
+                        <div class=" d-flex  pt-2 pb-1 " style="flex-direction: row; justify-content: space-between;">
+                            <div class="d-flex ">
+                                <div class="align-items-center">
+                                    <img src="icon/bengkel.png" style="border-radius: 50%;" alt="">
+                                </div>
+                                <div class="ms-3 mt-1" style="text-align: start;">
+                                    <h6 class="mb-0" style="font-weight: bolder;">AMANIA STORE</h6>
+                                    <p class="" style="font-size: 1rem;">❤️batas max balas.....
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <p class="mb-0" style="font-size: 12px;color: rgb(182, 182, 182); ">12 may
+                                <p class="d-flex" style="font-size: 12px;">
+                                    <span class="me-4"></span>
+                                    <span class="css-12w1vqc rounded-10">1</span>
+                                </p>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="nav-link p-0 link-dark" style="background-color: white; border: none;"
+                        id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+                        role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <div class=" d-flex  pt-2 pb-1 " style="flex-direction: row; justify-content: space-between;">
+                            <div class="d-flex ">
+                                <div class="align-items-center">
+                                    <img src="icon/pijet.png" style="border-radius: 50%;" alt="">
+                                </div>
+                                <div class="ms-3 mt-1" style="text-align: start;">
+                                    <h6 class="mb-0" style="font-weight: bolder;">AMANIA STORE</h6>
+                                    <p class="" style="font-size: 1rem;">❤️max balas.....
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <p class="mb-0" style="font-size: 12px;color: rgb(182, 182, 182); ">12 may
+                                <p class="d-flex" style="font-size: 12px;">
+                                    <span class="me-4"></span>
+                                    <span class="css-12w1vqc rounded-10">2</span>
+                                </p>
+                            </div>
+                        </div>
+                    </button>
+                    <button style="display: none;" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">Home</button>
+
+
+
+                </div>
+            </div>
+            <div class="col-9 p-0" style="padding-left: 0px !important; margin-left: -15px; ">
+                <div class="card container-fluid  p-0"
+                    style=" width: 100%; height: 100%;border-radius:0px 12px 12px 0px">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <div style="margin-top: 120px;" class="d-flex flex-column align-items-center pt-5 ">
+                                <img src="icon/chat-non.jpg" alt="" style="width: 20%;">
+                                <div class="d-flex" style="align-items: center; flex-direction: column;">
+                                    <p class="fs-4 mt-3 mb-0">
+                                        Mari memulai obrolan!
+                                    </p>
+                                    <p class="mt-0">
+                                        Pilih pesan di samping untuk mulai chat dengan penjual.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <div class=" container p-5 pt-3"
+                                style="width: 100%; height: 535px; background-color: rgb(252, 254, 255);border-radius:0px 12px 0px 0px">
+                                <div class=" d-flex  pt-2 pb-1 border-bottom "
+                                    style="border-top:none;border-right:none;flex-direction: row; justify-content: space-between;">
+                                    <div class="d-flex ">
+                                        <div class="align-items-center">
+                                            <img src="icon/bengkel.png" style="border-radius: 50%;" alt="">
+                                        </div>
+                                        <div class="text ms-3 mt-1">
+                                            <h6 class="mb-0" style="font-weight: bolder;">AMANIA STORE</h6>
+                                            <p class="" style="font-size: 12px;">Online
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="mt-1">
+                                        <a href="">
+                                            <svg class="unf-icon" viewBox="0 0 24 24" width="24" height="24"
+                                                fill="var(--color-icon-enabled, #2E3137)"
+                                                style="display: inline-block; vertical-align: middle;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.48 5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-1.5 8.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="container-fluid mt-2" style="height: 445px; overflow-y: auto;">
+                                    <div class=" d-flex  mt-3  flex-column align-items-end">
+                                        <div class=" col-6 card p-4 mt-3 mb-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">Lorem ipsum hallo
+                                                .</p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="  d-flex ">
+                                        <div class=" col-6 card p-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">Hi ! Welcome to
+                                                L''''''''''''''''''''''''''''''''Ore Jewellery Official❤️
+
+                                                Thank you for choosing L''''''''''''''''''''''''''''''''Ore Jewellery
+                                                Official.
+
+                                                *Transaksi di atas jam 15:00 maka akan di kirim di hari berikutnya namun
+                                                kami usahakan pengiriman pada hari yang sama.
+
+                                                ❤️batas max balas chat jam 22.00❤️
+
+                                                Happy shopping Dear</p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+                                        </div>
+                                    </div>
+                                    <div class=" d-flex  mt-3  flex-column align-items-end">
+                                        <div class=" col-6 card p-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit.
+                                                doloribus ab voluptas enim! Possimus numaqi numquam modi
+                                            </p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+
+                                        </div>
+                                        <div class="col-6 card p-4 mt-3 mb-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">Lorem ipsum Terima kasih! salah pencet
+                                                .</p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3 ">
+                                        <div class=" col-6 card p-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">
+                                                ❤️batas max balas chat jam 22.00❤️ <br>
+
+                                                Happy shopping Dear</p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ms-5 me-5 mt-2 mb-2 d-flex">
+                                <input type="text " class="form-control " style=" padding: 10px; border: none;"
+                                    id="formGroupExampleInput" placeholder="Type a Message here">
+                                <img src="bootstrap-icons-1.8.3/plus-circle.svg" class="p-2 mt-1 ms-2" height="40">
+                                <img src="bootstrap-icons-1.8.3/emoji-smile.svg" class="p-2 mt-1  ms-1" height="40">
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <div class=" container p-5 pt-3"
+                                style="width: 100%; height: 535px; background-color: rgb(252, 254, 255);border-radius:0px 12px 0px 0px">
+                                <div class=" d-flex  pt-2 pb-1 border-bottom "
+                                    style="border-top:none;border-right:none;flex-direction: row; justify-content: space-between;">
+                                    <div class="d-flex ">
+                                        <div class="align-items-center">
+                                            <img src="icon/pijet.png" style="border-radius: 50%;" alt="">
+                                        </div>
+                                        <div class="text ms-3 mt-1">
+                                            <h6 class="mb-0" style="font-weight: bolder;">Mbah Manjur</h6>
+                                            <p class="" style="font-size: 12px;">Online
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="mt-1">
+                                        <a href="">
+                                            <svg class="unf-icon" viewBox="0 0 24 24" width="24" height="24"
+                                                fill="var(--color-icon-enabled, #2E3137)"
+                                                style="display: inline-block; vertical-align: middle;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.48 5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-1.5 8.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="container-fluid mt-2" style="height: 445px; overflow-y: auto;">
+                                    <div class=" d-flex  mt-3  flex-column align-items-end">
+                                        <div class="col-6 card p-4 mt-3 mb-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">P
+                                                .</p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="  d-flex ">
+                                        <div class=" col-6 card p-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">Hi ! Welcome to
+                                                LOre Jewellery Official❤️
+
+                                                Thank you for choosing LOre Jewellery
+                                                Official.
+
+                                                *Transaksi di atas jam 15:00 maka akan di kirim di hari berikutnya namun
+                                                kami usahakan pengiriman pada hari yang sama.
+
+                                                ❤️batas max balas chat jam 22.00❤️
+
+                                                Happy shopping Dear</p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+                                        </div>
+                                    </div>
+                                    <div class=" d-flex  mt-3  flex-column align-items-end">
+                                        <div class="col-6 card p-4 mt-3 mb-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">Terima kasih!
+                                                .</p>
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3 ">
+                                        <div class=" col-6 card p-4 " style="border-radius: 12px;">
+                                            <p class="fs-6 mb-0 text-left">
+                                                ❤️max balas chat jam 22.00❤️
+                                            <p class="d-flex justify-content-end off-txt"
+                                                style=" margin-bottom: -10px;">12:30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" ms-5 me-5 mt-2 mb-2 d-flex">
+                                <input type="text " class="form-control " style=" padding: 10px; border: none;"
+                                    id="formGroupExampleInput" placeholder="Type a Message here">
+                                <img src="bootstrap-icons-1.8.3/plus-circle.svg" class="p-2 mt-1 ms-2" height="40">
+                                <img src="bootstrap-icons-1.8.3/emoji-smile.svg" class="p-2 mt-1  ms-1" height="40">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+
+            <img src="icon/Ada jasa.png" alt="">
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">AdaJasa@smilly.com</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <a href="https://goo.gl/maps/MLo5wJqJ4aoAuJaNA">
+                    <p><span>Condongcatur</span> Sleman, California</p>
+                </a>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <a href="">
+                    <p>+6285877681431</p>
+                </a>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="https://www.instagram.com/arinii.aa/">support@arinii.aa.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About Us</span>
+                ada jasa untuk memudahkan dalam mencari berbagai macam jasa dengan tanpa ribet dan dengan biaya yang
+                terjangkau
+            </p>
+
+            <div class="footer-icons">
+
+                <a class="socialContainer" href="#"><i class="fa fa-facebook c1"></i></a>
+                <a class="socialContainer" href="#"><i class="fa fa-twitter c2"></i></a>
+                <a class="socialContainer" href="#"><i class="fa fa-linkedin c3"></i></a>
+                <a class="socialContainer" href="#"><i class="fa fa-github c4"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+          <script src="script.js"></script>
+          <!-- JS Bootstrap -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</body>
+
+</html>
