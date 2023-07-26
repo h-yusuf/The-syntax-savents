@@ -37,16 +37,46 @@
               <div class="col-9">
                 <div class="row">
                   <div class="col-2" style="padding: 2px 0 0 0;">
-                    <button type="button" class="btn btn-outline-secondary"><span style="color: white;">Kategori Jasa</span></button>
+                    <div class="dropdown-container">
+                        <button onmouseover="dropdownKategori()" type="button" class="btn btn-outline-secondary dropdown-btn"><span style="color: white;">Kategori Jasa</span></button>
+                        <!-- <button class="dropdown-btn">Hover Me</button> -->
+                        <div id="dropdown-content">
+                            <!-- Isi tampilan halaman dropdown di sini -->
+                            <div class="container">
+                              <div class="row">
+                                <div class="col col-lg-2">
+                                  <div class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action active" aria-current="true" style="background-color: var(--main-color); border: none;">
+                                      Bengkel
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action">Kesehatan</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Service Rumah</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Style & Fashion</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Kebersihan</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Alat Berat</button>
+                                  </div>
+                                </div>
+                                <div class="col col-lg-10">
+                                  <h1>Bengkel</h1>
+                                  <ol class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Bengkel Mobil</a></li>
+                                    <li class="list-group-item"><a href="">Bengkel Motor</a></li>
+                                    <li class="list-group-item"><a href="">Bengkel Sepeda</a></li>
+                                  </ol>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                     
                   </div>
                   <div class="col-10">
                     <form class="d-flex" style="width: 100%;">
                       <div class="InputContainer me-3" style="justify-content: space-between; height: 2.5em; width: 100%;" aria-label="search">
                         <input type="text" name="text" class="input" id="input" placeholder="Cari Jasa Di Sekitar Anda">
-                        <label for="input" class="labelforsearch">
-                      <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
-                      </label>         
+                        <button type="submit" style="border: none; background-color: inherit;"><label for="input" class="labelforsearch" style="cursor: pointer;">
+                            <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                            </label> </button>        
                       </div>
                       <!-- <div class="me-3 ms-2 mt-1 align-items-center" style="background-color: #738b81; height: 32px; width: 1.2px;"></div> -->
                       <!-- <input class="form-control  me-2 rounded-2" style="outline: none;" type="search" placeholder="Cari Di AdaJasa" aria-label="Search"> -->

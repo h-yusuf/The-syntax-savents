@@ -23,3 +23,46 @@ window.addEventListener('scroll', function() {
 
     prevScrollpos = scrollTop;
 });
+
+// fungsi menampilkan dropdown kategori
+function dropdownKategori() {
+    var content = document.getElementById("dropdown-content");
+    content.style.display = "block";
+
+    document.addEventListener('click', function(event) {
+        const target = event.target;
+        if (!content.contains(target)) {
+            content.style.display = "none";
+        }
+      });
+}
+
+// validate register
+function validateFormDaftar() {
+    // Get input values
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+
+    // Email validation using RegEx
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Alamat Email tidak valid !");
+        return false;
+    }
+
+    // Password confirmation check
+    if (password !== confirmPassword) {
+        alert("Password dan Confirm Password tidak sama!");
+        return false;
+    }
+
+    // Validation success, form can be submitted
+    return true;
+}
+
+// validate login
+function validateFormMasuk() {
+    window.location.href = "index_login.html";
+    return false;
+}
