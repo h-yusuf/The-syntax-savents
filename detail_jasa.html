@@ -1,80 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Produk</title>
-    <link rel="stylesheet" href="style_detail jasa.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <link rel="website icon" style="border-radius: 50%;" href="icon/icon.png" type="png">
-    
+  <title>Ada Jasa Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_detail jasa.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.8.3/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="website icon" style="border-radius: 50%;" href="icon/icon.png" type="png">
 </head>
 
 <body>
-    <nav>
-        <div class="nav-lc">
-            <a class="ul-nav a" href="#">Download AdaJasa App</a>
-            <ul class="ul-nav">
-                <li class="li-nav">
-                    <a class="nav-link" href="#">FaQ</a>
-                </li>
-                <li class="li-nav">
-                    <a class="nav-link" href="#">Mulai Buka Jasa</a>
-                </li>
-                <li class="li-nav">
-                    <a class="nav-link" href="#">Promo</a>
-                </li>
-                <li class="li-nav">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-            </ul>
+<!-- Navbar -->
+<div class="nav-lc">
+  <a class="ul-nav a" href="#">Download AdaJasa App</a>
+  <ul class="ul-nav">
+    <li class="li-nav"><a href="">FaQ</a></li>
+    <li class="li-nav"><a href="">Mulai Buka Jasa</a></li>
+    <li class="li-nav"><a href=""> promo</a></li>
+    <li class="li-nav"><a href="">About Us</a></li>
+  </ul>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-color" style="flex-wrap: wrap;">
+  <div class="container-fluid pt-3 pb-2 ms-3 me-3" >
+    <div class="col-4" >
+      <a class="navbar-brand" href="#"><img class="mt-1" src="icon/Ada jasa.png"></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " style="justify-content: end;"  id="navbarScroll">
+      <ul class="navbar-nav  my-3 my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link d-flex" href="#"><img class="me-3 icon-lc" src="icon/promo.png"><p style="display: none;">Promo</p></a>
+          <!-- <a class="nav-link" href="#">Link</a> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/notif.png"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/chat.png"></a>
+          <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> -->
+        </li>
+      </ul>
+      <form class="d-flex ">
+        <div class="InputContainer me-3" style="justify-content: space-between;" aria-label="search">
+          <input type="text" name="text" class="input" id="input" placeholder="Cari Jasa Di Sekitar Anda">
+          
+          <label for="input" class="labelforsearch">
+        <svg viewBox="0 0 512 512" class="searchIcon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+        </label>         
         </div>
-        <div class="nav-a bg-color">
-            <a href="#"><img class="img" src="icon/Ada jasa.png"></a>
-            <div class="maps">
-                <img src="icon/gmaps.png">
-                <p>Condongcatur,Depok,Sleman, Yogyakarta</p>
-            </div>
-            <div class="src">
-                <input type="search" class="search" placeholder="Cari Jasa">
-                <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
-                    <path
-                        d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
-                    </path>
-                </svg>
-            </div>
-            <div class="icon-link">
-                <a href="#"><img class="icon-nav" src="icon/promo.png"></a>
-                <a href="#"><img class="icon-nav" src="icon/notif.png"></a>
-                <a href="#"><img class="icon-nav" src="icon/chat.png"></a>
-            </div>
-            <img class="pp" src="icon/pp.png" alt="">
+        <!-- <div class="me-3 ms-2 mt-1 align-items-center" style="background-color: #738b81; height: 32px; width: 1.2px;"></div> -->
+        <!-- <input class="form-control  me-2 rounded-2" style="outline: none;" type="search" placeholder="Cari Di AdaJasa" aria-label="Search"> -->
+        <!-- <button class=" btn btn-outline-success" type="submit">Search</button> -->
+        <div class="ms-2 me-2" >
+          <img style="border-radius: 50% !important; width: 42px; height: 42px;" src="https://farih.co.id/wp-content/uploads/2023/05/ed_dihyxoaazcpr.jpg"  alt="">
         </div>
-    </nav>
-    <div class="container">
-        <h1>Detail Jasa</h1>
-            <div class="col col-md-4">
-                <div class="card">
-                    <img src="asset/Avatar.png">
-                    <div class="card-content">
-                        <h3>Massage Cemara</h3>
-                        <p>Tukang</p>
-                    </div>
+      </form>
+    </div>
+  </div>
+  <div class="d-flex "  style="margin-left: 24px !important;">
+    <div class="d-flex ">
+      <img class="me-2" style="height: 16px; width: 16px;" src="icon/gmaps.png">
+      <p class="me-0  mb-0 ms-0  text" style="color: white; font-size: 12px; font-family:var( --md-font);">Condongcatur,Depok,Sleman,Yogyakarta</p>
+    </div>
+  </div>
+</nav>
+
+<!--Konten-->
+  <div class="container-detail">
+       <h1>Detail Jasa</h1>
+       <div class="row">
+          <div class="col col-lg-12" style="display: flex; justify-content: center;">
+              <div class="card-detail">
+                <img src="asset/Avatar.png">
+                  <div class="card-content ms-4">
+                      <h3>Massage Cemara</h3>
+                      <p>Tukang</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <h2>Tentang Jasa</h2>
+          <div class="col col-lg-12">
+            <div class="tentang-jasa">
+            <h6>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste placeat pariatur saepe mollitia eos facilis est quo. Exercitationem laboriosam veniam repellendus illum ex assumenda culpa magnam ut optio nemo.
+            </h6>
+            </div>
+          </div>
+
+        <h2>Layanan Utama*</h2>
+          <div class="col col-lg-12">
+            <div class="card-layanan">
+              <img src="asset/pijat.png">
+                <div class="card-content ms-4">
+                    <h3>Pijat biasa</h3>
+                    <p>Pijat tanpa kretek</p>
+                    <h4>Rp 110.000</h4>
                 </div>
             </div>
-            <div>
-                <h2>Tentang Jasa</h2>
-                
+            <div class="card-layanan">
+              <img src="asset/pijat.png">
+                <div class="card-content ms-4">
+                    <h3>Pijat spesial</h3>
+                    <p>Pijat dengan kretek</p>
+                    <h4>Rp 150.000</h4>
+                </div>
             </div>
+          </div>
+
+      <h2>Layanan Tambahan</h2>    
+      <div class="container-tambahan">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <div class="tambahan">
+              <h3>Pilih Tanggal</h3>
+            </div>
+            <div class="table-responsive" style="padding: 24px; border-radius: 12px;max-width: 80%; margin-left: 32px;">
+              <p>Pesan Jasa</p>
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th colspan="7">
+                              <i class="bi bi-chevron-left"></i>
+                              July
+                              <i class="bi bi-chevron-right"></i>
+                          </th>
+                      </tr>
+                      <tr>
+                          <th>Sen</th>
+                          <th>Sel</th>
+                          <th>Rab</th>
+                          <th>Kam</th>
+                          <th>Jum</th>
+                          <th>Sab</th>
+                          <th>Ming</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>1</td>
+                          <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                      </tr>
+                      <tr>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                  </tbody>
+              </table>  
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="tambahan">
+              <h3>Pilih Waktu</h3>
+            </div>
+            <div class="d-grid gap-3 d-md-flex" style="margin-left: 32px;">
+              <button class="btn-x" type="button">00.00 AM</button>
+              <button class="btn-off" type="button">10.00 AM</button>
+              <button class="btn-on" type="button">11.00 AM</button>
+            </div>
+            <div class="d-grid gap-3 d-md-flex" style="margin-left: 32px; margin-top: 16px;">
+              <button class="btn-x" type="button">00.00 AM</button>
+              <button class="btn-x" type="button">10.00 AM</button>
+              <button class="btn-off" type="button">11.00 AM</button>
+            </div>
+            <div class="d-grid gap-3 d-md-flex" style="margin-left: 32px;margin-top: 16px;">
+              <button class="btn-off" type="button">00.00 AM</button>
+              <button class="btn-off" type="button">10.00 AM</button>
+              <button class="btn-x" type="button">11.00 AM</button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <h2>Alamat</h2>
+      <div class="container-alamat">
+        <input class="form-control" type="text" placeholder="Masukkan alamat Anda" aria-label="default input example">
+        <input class="form-control" type="text" placeholder="Tambahkan ciri-ciri rumah Anda" aria-label="default input example">
+      </div>
+
+      <h2>Catatan Pesanan</h2>
+      <div class="container-alamat">
+      <input class="form-control" type="text" aria-label="default input example">
+      </div>
+
+      <div class="container-pj">
+          <button type="button" class="btn1" onclick="kehallain()">Pesan Jasa Sekarang</button>
+          <button type="button" class="btn"><img src="icon/chat.png"></button>
+      </div>
+      <div>
+
+      </div>
+  </div>
 
     
+<!-- footer -->
+<footer class="footer-distributed">
+  <div class="footer-left">
 
+    <img src="icon/Ada jasa.png" alt="">
+
+    <p class="footer-links">
+      <a href="#" class="link-1">Home</a>
+      
+      <a href="#">Blog</a>
+    
+      <a href="#">About</a>
+      
+      <a href="#">Faq</a>
+      
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">AdaJasa@smilly.com</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <a href="https://goo.gl/maps/MLo5wJqJ4aoAuJaNA">
+        <p><span>Condongcatur</span> Sleman, California</p>
+      </a>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <a href="">
+        <p>+6285877681431</p>
+      </a>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="https://www.instagram.com/arinii.aa/">support@arinii.aa.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About Us</span>
+ada jasa untuk memudahkan dalam mencari berbagai macam jasa dengan tanpa ribet dan dengan biaya yang terjangkau			</p>
+
+    <div class="footer-icons">
+
+      <a class="socialContainer" href="#"><i class="fa fa-facebook c1"></i></a>
+      <a class="socialContainer" href="#"><i class="fa fa-twitter c2" ></i></a>
+      <a class="socialContainer" href="#"><i class="fa fa-linkedin c3"></i></a>
+      <a class="socialContainer" href="#"><i class="fa fa-github c4"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
  
 
-
+<script>
+  function kehallain() {
+    window.location.href = "pesan.html";
+  }
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

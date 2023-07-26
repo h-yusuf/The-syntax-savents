@@ -1,149 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500&display=swap');
+/*Background color*/
 
-:root {
-    --main-color: #5CB5A3;
-    --primary-color: #DCC6A2;
-    --abu-color: #3E4C54;
-    --bg-color: #E7F3EF;
-
-    --main-font: 'Inter', sans-serif;
-    --md-font: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: var(--bg-color);
-    font-family: var(--main-font);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-.bg-color {
-    background-color: var(--main-color);
-}
-
-/* Navbar */
-.ul-nav {
-    display: flex;
-    height: 15px;
-    margin-top: 11px;
-    justify-content: right;
-    font-size: 14px;
-    margin-right: 32px;
-    margin-left: 32px;
-    margin-bottom: 11px;
-}
-
-.nav-lc {
-    display: flex;
-    justify-content: space-between;
-}
-
-.a {
-    color: #212121;
-}
-
-.li-nav {
-    margin-left: 24px;
-}
-
-.nav-a {
-    padding: 32px;
-    padding-bottom: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.maps {
-    margin-left: 37px;
-    display: flex;
-    font-size: 14px;
-}
-
-.maps>img {
-    height: 32px;
-    width: 32px;
-}
-
-.maps > p {
-    margin-left: 8px;
-    width: 216px;
-    color: white;
-}
-
-.search {
-    border: none;
-    outline: none;
-    padding-left: 18px;
-    outline: none;
-    width: 460px;
-}
-
-.search::-webkit-input-placeholder {
-    color: var(--main-color);
-}
-
-.src {
-    background-color: white;
-    border-radius: 8px;
-    padding: 8px;
-    margin-left: 48px;
-    width: 499px;
-    height: 35px;
-}
-
-.search_icon {
-    height: 1em;
-    padding-top: 5px;
-    fill: var(--main-color);
-}
-
-.icon-link {
-    margin-left: 24px;
-    margin-right: 24px;
-}
-
-.icon-nav {
-    margin-top: 6px;
-    margin-right: 32px;
-    height: 24px;
-}
-
-/* link nav */
-.nav-link {
-    color: black;
-}
 
 /*Body*/
-h1 {
+
+.container-detail h1 {
+    /*Judul untuk Detail Jasa*/
     font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
 }
-.container {
+.container-detail {
     /*margin digunakan untuk menata letak dari sisi luar*/
     margin-left: 72px;
     margin-right: 72px;
     margin-top: 32px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
     background-color: #fff;
     border-radius: 12px;
 }
 
-.card {
+.card-detail {
+    /*Card nama jasa*/ 
     display:flex;
-    width: fit-content;
+    width:max-content;
     flex-direction: row;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-
+    border: 1px solid var(--main-color);
+    border-radius: 12px;
+    padding: 16px;
+    margin-right: 24px;
+    margin-left: 24px;
 }
 
-.card img {
+.card-detail img {
+    /*Foto pada card nama jasa*/
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -164,4 +56,111 @@ h1 {
 .card-content p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+.card-content h4 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.container-detail h2 {
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.tentang-jasa {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: var(--bg-color);
+}
+
+/*card layanan*/
+.card-layanan {
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 12px;
+    padding: 12px 24px;
+    border: 1px solid var(--main-color);
+    border-radius: 12px;
+}
+
+.card-layanan .card-content {
+    margin-left: 16px;
+}
+
+.card-layanan img {
+    width: 100px;
+    height: 100px;
+}
+
+.tambahan h3 {
+    margin-top: 16px;
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+.table-responsive {
+    background-color: var(--bg-color);
+}
+
+.container-alamat {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 12px;
+}
+
+.form-control {
+    height: 50px;
+    margin-top: 16px;
+    border-radius: 12px;
+    border-color: var(--main-color);
+    background-color: var(--bg-color);
+}
+
+.container-pj {
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 24px;
+}
+
+.btn1 {
+    width: 90%;
+    height: 40px;
+    background-color: var(--main-color);
+    border: var(--main-color);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.btn {
+    margin-left: 40px;
+    height: 40px;
+}
+
+.btn-x {
+    width: 25%;
+    height: 40px;
+    opacity: 30%;
+    border-radius: 12px;
+}
+
+.btn-off {
+    width: 25%;
+    height: 40px;
+    border-color: var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 12px;
+}
+
+.btn-on {
+    width: 25%;
+    height: 40px;
+    border-color: var(--main-color);
+    border-radius: 12px;
+    background-color: var(--main-color);
 }
