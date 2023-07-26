@@ -71,7 +71,7 @@
                     
                   </div>
                   <div class="col-10">
-                    <form class="d-flex" style="width: 100%;">
+                    <form class="d-flex" style="width: 100%;" onsubmit="return search()">
                       <div class="InputContainer me-3" style="justify-content: space-between; height: 2.5em; width: 100%;" aria-label="search">
                         <input type="text" name="text" class="input" id="input" placeholder="Cari Jasa Di Sekitar Anda">
                         <button type="submit" style="border: none; background-color: inherit;"><label for="input" class="labelforsearch" style="cursor: pointer;">
@@ -96,12 +96,38 @@
                     <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/notif.png"></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><img class="me-3 icon-lc" src="icon/chat.png"></a>
+                    <a class="nav-link" href="chat.html"><img class="me-3 icon-lc" src="icon/chat.png"></a>
                     <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> -->
                   </li>
                   <li>
                     <div class="ms-2 me-2" >
-                      <img style="border-radius: 50% !important; width: 42px; height: 42px;" src="https://farih.co.id/wp-content/uploads/2023/05/ed_dihyxoaazcpr.jpg"  alt="">
+                        <div class="dropdown-container">
+                        <img onmouseover="dropdownProfile()" style="border-radius: 50% !important; width: 42px; height: 42px; cursor: pointer;" src="https://farih.co.id/wp-content/uploads/2023/05/ed_dihyxoaazcpr.jpg"  alt="">
+                        <div id="dropdown-content-profile">
+                            <!-- Isi tampilan halaman dropdown di sini -->
+                            <div class="container">
+                              <div class="row">
+                                <div class="col">
+                                  <div class="list-group">
+                                    
+                                    <a href="#" role="button" class="menu-profile list-group-item list-group-item-action" style = "border: none;">
+                                        <i class="bi bi-person-circle"></i>
+                                        Account
+                                    </a>
+                                    <a href="#" role="button" class="menu-profile list-group-item list-group-item-action" style = "border: none;">
+                                        <i class="bi bi-card-checklist"></i>
+                                        Daftar Transaksi    
+                                    </a>
+                                    <a href="index.html" role="button" class="menu-profile list-group-item list-group-item-action" style = "border: none;">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        Log Out
+                                      </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                   </li>
                 </ul>
@@ -141,7 +167,7 @@
                 <h2 class="k2">Kategori Jasa</h2>
                 <div class="kategori">
                   <div class="row row-cols-3">
-                    <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="#">
+                    <div class="col col-lg-4 col-md-6 kategori-col"><a class="kategori-a" href="sidebar.html">
                         <img class="icon-kg" src="icon/car.png">
                         <p class="p-kg">Bengkel</p>
                       </a></div>

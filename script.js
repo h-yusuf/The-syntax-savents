@@ -1,4 +1,6 @@
 let prevScrollpos = 0;
+var content = document.getElementById("dropdown-content");
+var content_profile = document.getElementById("dropdown-content-profile");
 
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
@@ -26,13 +28,26 @@ window.addEventListener('scroll', function() {
 
 // fungsi menampilkan dropdown kategori
 function dropdownKategori() {
-    var content = document.getElementById("dropdown-content");
+    content_profile.style.display = "none";
     content.style.display = "block";
 
     document.addEventListener('click', function(event) {
         const target = event.target;
         if (!content.contains(target)) {
             content.style.display = "none";
+        }
+      });
+}
+
+// fungsi menampilkan dropdown kategori
+function dropdownProfile() {
+    content.style.display = "none";
+    content_profile.style.display = "block";
+
+    document.addEventListener('click', function(event) {
+        const target = event.target;
+        if (!content.contains(target)) {
+            content_profile.style.display = "none";
         }
       });
 }
@@ -64,5 +79,10 @@ function validateFormDaftar() {
 // validate login
 function validateFormMasuk() {
     window.location.href = "index_login.html";
+    return false;
+}
+// search
+function search() {
+    window.location.href = "sidebar.html";
     return false;
 }
