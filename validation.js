@@ -18,3 +18,8 @@ function cekPass(){
     }
     console.log(pass)
 }
+
+
+  function masukdaftar() {
+    window.location.href = "index.html";
+  }
