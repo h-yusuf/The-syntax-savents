@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500&display=swap');
+
 :root {
     --main-color: #5CB5A3;
     --primary-color: #DCC6A2;
@@ -10,4 +12,8 @@
 
     --main-font: 'Inter', sans-serif;
     --md-font: 'Poppins', sans-serif;
+}
+
+body{
+font-family: var(--main-font);
 }
