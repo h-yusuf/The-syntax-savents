@@ -4,5 +4,16 @@
   },
   "dependencies": {
     "flowbite": "^2.1.1"
-  }
+  },
+  "name": "the-syntax-savents",
+  "description": "*npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch*",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind" : "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
