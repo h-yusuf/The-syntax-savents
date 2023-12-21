@@ -14,7 +14,7 @@
   <!-- Navbar -->
   <div class="sticky top-0 z-50 bg-white">
     <!-- Navbar -->
-    <div class="flex justify-between mx-6 my-1 pb-2 shadow-sm" style="background-color: #ffffff">
+    <div class="flex justify-between  px-5 py-1 pb-2 shadow-sm" style="background-color: #ffffff">
       <a class="text-sm" href="#">Download AdaJasa App</a>
       <ul class="flex gap-4 text-sm">
         <li class="li-nav"><a href="">FaQ</a></li>
@@ -25,7 +25,7 @@
     </div>
     <nav class="flex py-4 px-6 shadow-md justify-between">
       <div class="flex items-center gap-8">
-        <img src="/icon/Ada jasa blue.png" alt="" />
+      <img src="icon/Ada jasa blue.png" alt="" />
         <a href="" class="flex gap-2">
           <svg class="w-6 h-6 text-primary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 17 21">
@@ -96,7 +96,7 @@
               </div>
               <!-- Modal body -->
               <div class="p-4 md:p-5">
-                <form class="space-y-4" action="#">
+                <form class="space-y-4" action="backend/login.php" method="POST">
                   <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                       email</label>
@@ -212,27 +212,27 @@
       <div class="relative h-56 overflow-hidden rounded-lg ">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/asset/banner.png"
+          <img src="asset/banner.png"
             class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="/asset/banner.png"
+          <img src="asset/banner.png"
             class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/asset/banner.png"
+          <img src="asset/banner.png"
             class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/asset/banner.png"
+          <img src="asset/banner.png"
             class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
         <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/asset/banner.png"
+          <img src="asset/banner.png"
             class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
       </div>
@@ -271,7 +271,7 @@
   
       <!-- card jasa popular -->
   
-      <div class="mt-4 relative overflow-x-auto">
+      <div class="mt-4 relative overflow-x-hidden">
         <div class="w-screen min-w-max flex gap-4">
           <div
             class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -279,7 +279,7 @@
             <a href="#">
               <img
                 class="rounded-t-lg w-full"
-                src="/asset/kategory.png"
+                src="asset/kategory.png"
                 alt=""
               />
             </a>
@@ -322,7 +322,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -335,7 +335,7 @@
             <a href="#">
               <img
                 class="rounded-t-lg w-full"
-                src="/asset/kategory.png"
+                src="asset/kategory.png"
                 alt=""
               />
             </a>
@@ -378,7 +378,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -391,7 +391,7 @@
             <a href="#">
               <img
                 class="rounded-t-lg w-full"
-                src="/asset/kategory.png"
+                src="asset/kategory.png"
                 alt=""
               />
             </a>
@@ -434,7 +434,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -447,7 +447,7 @@
             <a href="#">
               <img
                 class="rounded-t-lg w-full"
-                src="/asset/kategory.png"
+                src="asset/kategory.png"
                 alt=""
               />
             </a>
@@ -490,7 +490,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -503,7 +503,7 @@
             <a href="#">
               <img
                 class="rounded-t-lg w-full"
-                src="/asset/kategory.png"
+                src="asset/kategory.png"
                 alt=""
               />
             </a>
@@ -546,7 +546,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -565,7 +565,7 @@
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="https://flowbite.com/" class="flex items-center">
-            <img src="/icon/Ada jasa blue.png" class="h-10 me-3" alt="FlowBite Logo" />
+            <img src="icon/Ada jasa blue.png" class="h-10 me-3"  />
 
           </a>
           <div class="flex py-4 gap-2 text-gray-500">
