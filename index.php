@@ -3,11 +3,13 @@
 
 <head>
   <title>Ada Jasa Web</title>
+  
   <link rel="website icon" style="border-radius: 50%" href="icon/icon.png" type="png" />
-  <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="stylesheet" href="dist/output.css" type="text/css"/>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -322,7 +324,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -378,7 +380,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -434,7 +436,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -490,7 +492,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>
@@ -546,7 +548,7 @@
               </div>
               <a
                 href="#"
-                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-blue-800 rounded-md text-white hover:bg-blue-700"
+                class="inline-flex items-center justify-center px-3 py-4 text-sm font-medium text-center w-full bg-primary rounded-md text-white hover:bg-blue-700"
               >
                 Pesan jasa
               </a>

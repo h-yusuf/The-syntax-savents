@@ -1,40 +1,41 @@
 <?php
-// Assuming you have a database connection
-// Replace the database connection details with your own
-// $servername = "your_servername";
-// $username = "your_username";
-// $password = "your_password";
-// $dbname = "your_dbname";
-
-$conn = mysqli_connect("localhost","root","","adajasa");
+// connection database
+$conn = mysqli_connect("localhost", "root", "", "adajasa");
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Assuming you have a form with fields named 'email' and 'password'
+
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    // Retrieve user information from the database based on the provided email
-    $stmt = $conn->prepare("SELECT email, password FROM users WHERE email = ?");
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $stmt->bind_result($dbEmail, $dbPassword);
-    $stmt->fetch();
-    $stmt->close();
+    $stmt = mysqli_prepare($conn, "SELECT   email, password FROM user WHERE email = ?");
+    mysqli_stmt_bind_param($stmt, "s", $email);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $dbemail, $dbPassword);
+    mysqli_stmt_fetch($stmt);
+    mysqli_stmt_close($stmt);
 
-    // Verify the password
-    if ($dbEmail && password_verify($password, $dbPassword)) {
+    // Verify password
+    if ($dbemail && sha1($password) == $dbPassword) {
         // Password is correct
-        echo "<script>alert('Login successful!'); window.location.href='H   ome.html';</script>";    
+        $userdata = [
+            
+            'email' => $dbemail,
+            // 'id_user' => $id_user,
+        ];
+        session_start();
+        $_SESSION["LoggedUserData"] = $userdata;
+
+        header("Location: http://localhost/The-syntax-savents/src/pages/Home.php");
+        exit();
     } else {
-        // Email or password is incorrect
-        echo "<script>alert('Login failed. Please check your email and password.');</script>";
+        $error_msg = "Login failed. Please check your email and password.";
+        echo "<script>alert('$error_msg'); window.location.href='http://localhost/The-syntax-savents/index.php';</script>";
     }
 }
-
-$conn->close();
+mysqli_close($conn);
 ?>
